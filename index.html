@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff5fa">
+<title>喵喵恋爱日历 · 双人甜蜜空间 2026—2027</title>
+<style>
+:root{--ink:#765568;--pink:#ed8eaf;--pink-dark:#d96693;--pink-light:#fff0f6;--line:#f3dce6;--shadow:0 18px 54px rgba(180,107,136,.12);--font:ui-rounded,"Hiragino Maru Gothic ProN","PingFang SC","Microsoft Yahei",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:var(--font);background:radial-gradient(circle at 7% 5%,#ffe3f0 0,transparent 24%),radial-gradient(circle at 93% 11%,#ffe8ec 0,transparent 23%),radial-gradient(circle at 10% 90%,#f4e9ff 0,transparent 20%),#fff9fc;min-width:320px}
+button,textarea{font:inherit}button:focus-visible,textarea:focus-visible{outline:3px solid #e38baa;outline-offset:3px}button{cursor:pointer}a{color:var(--pink-dark)}
+.site{max-width:1280px;padding:35px 32px 70px;margin:0 auto;position:relative}.header-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 4px 23px}.logo{display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:900;letter-spacing:1px;color:#bd7192}.logo-paw{background:#fff;border:1px solid #f5dfe7;width:34px;height:34px;display:grid;place-items:center;border-radius:12px;box-shadow:0 4px 10px #f8e1eb}
+.header-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}.pill{background:#fff;border:1px solid #f1dce5;color:#a7738d;border-radius:999px;padding:10px 16px;font-weight:750;font-size:12px;box-shadow:0 4px 12px rgba(182,117,147,.05);transition:transform .2s,background .2s}.pill:hover{transform:translateY(-2px);background:#fff0f6}.pill.primary{background:#ee9ab9;color:white;border-color:#ee9ab9}
+.hero{min-height:260px;display:grid;grid-template-columns:1fr 340px;position:relative;overflow:hidden;background:linear-gradient(115deg,#ffebf3 2%,#fff4f7 55%,#ffedf3 100%);border:2px solid #ffedf3;border-radius:38px;padding:35px 48px;box-shadow:var(--shadow)}.hero:before{content:'';position:absolute;right:178px;top:-115px;width:310px;height:310px;background:#fff5fa;border-radius:50%}.hero:after{content:'';position:absolute;left:45%;bottom:-130px;width:265px;height:265px;background:rgba(255,255,255,.38);border-radius:50%}.hero-copy{position:relative;z-index:2;align-self:center}.eyebrow{font-size:12px;letter-spacing:3px;font-weight:900;color:#d780a5}.hero h1{font-size:clamp(31px,3.8vw,52px);line-height:1.27;margin:13px 0 13px;color:#bd7094;letter-spacing:1px;font-weight:950}.hero h1 span{color:#ed9bbb}.hero-sub{font-size:15px;line-height:1.9;color:#ae7f95;margin:0}.hero-badges{display:flex;gap:8px;margin-top:19px;flex-wrap:wrap}.hero-badges span{background:#ffffffc2;border:1px solid white;border-radius:30px;padding:7px 13px;font-size:12px;font-weight:800;color:#b9839f}.hero-art{height:100%;min-height:185px;display:flex;align-items:center;justify-content:center;position:relative;z-index:2}.hero-cat{width:min(100%,320px);overflow:visible;filter:drop-shadow(0 12px 13px rgba(222,130,158,.12))}.cat-paw{transform-origin:205px 135px;animation:wave 2.5s ease-in-out infinite}.cat-tail{transform-origin:80px 174px;animation:tail 3s ease-in-out infinite}.cat-eyes{transform-origin:center;animation:blink 6s infinite}.hero-heart-1{animation:hearts 3s infinite;transform-origin:center}.hero-heart-2{animation:hearts 3s .7s infinite;transform-origin:center}.star-1{animation:twinkle 2s ease-in-out infinite}.star-2{animation:twinkle 2.5s .5s ease-in-out infinite}
+.board-heading{display:flex;align-items:flex-end;justify-content:space-between;margin:38px 6px 19px;gap:15px}.board-heading h2{font-size:22px;margin:0 0 4px;color:#b57592}.board-heading p{margin:0;color:#bc9aaa;font-size:12px;line-height:1.7}.legend{display:flex;gap:9px;flex-wrap:wrap;align-items:center;font-size:11px;color:#ac8397}.legend span{display:flex;gap:5px;align-items:center;background:#fff;border:1px solid #f4e6ed;border-radius:20px;padding:6px 10px}.legend b{background:#ffebf1;color:#db799d;padding:2px 5px;border-radius:5px}.legend b.work{background:#e9edf6;color:#7786a8}
+.board{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.month{position:relative;background:#fff;border:1.5px solid #f4e1e8;border-radius:31px;box-shadow:var(--shadow);padding:27px 26px 22px;isolation:isolate;overflow:hidden;scroll-margin-top:20px}.month:before{content:'';position:absolute;height:175px;width:175px;background:var(--tint);border-radius:50%;top:-105px;right:-55px;z-index:-1}.month:after{content:'✧';position:absolute;font-size:24px;color:#f3bfce;right:31px;top:103px;transform:rotate(25deg)}.month-top{display:flex;align-items:center;justify-content:space-between;min-height:95px}.month-title{display:flex;align-items:center;gap:17px}.month-number{font-size:66px;font-weight:1000;line-height:1;letter-spacing:-6px;color:var(--accent);text-shadow:2px 4px 0 rgba(255,235,246,.9)}.month-info .en{font-size:11px;letter-spacing:2.3px;color:#bc9aaa;font-weight:900}.month-info .cn{font-size:16px;font-weight:900;color:#9e7287;margin-top:6px}.month-info .year{font-size:11px;color:#c09aaf;margin-top:7px}.month-character{width:96px;height:91px;display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0}.mini-cat{width:85px;height:85px;overflow:visible;transform:rotate(5deg)}.mini-cat .ears,.mini-cat .face{fill:var(--cat-color,#fff9f8);stroke:#9d788b;stroke-width:2.2;stroke-linejoin:round}.mini-cat .cheek{fill:#f5adc4}.mini-accessory{position:absolute;font-size:31px;right:-4px;top:0;transform:rotate(12deg);animation:small-dance 3s infinite}
+.month-motto{height:31px;display:flex;align-items:center;justify-content:flex-start;gap:5px;font-size:12px;color:#b68b9f;margin-bottom:9px;letter-spacing:.5px}.month-motto strong{font-weight:900;color:var(--accent)}.weekdays{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;padding:9px 0 11px;border-top:1px dashed #f1d9e4}.weekday{text-align:center;color:#b6a0ae;font-size:12px;font-weight:850}.weekday:nth-child(6),.weekday:nth-child(7){color:#e28eaa}.days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}.day{min-width:0;aspect-ratio:1/1.07;min-height:61px;background:#fffafd;border:1px solid #f8edf1;border-radius:13px;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:6px 3px 3px;color:var(--ink);transition:transform .18s,box-shadow .18s,border-color .18s,background .18s}.day:not(.outside):hover{transform:translateY(-3px) scale(1.035);box-shadow:0 8px 20px #f6d4e4;border-color:#ebb3c9;z-index:3}.day.outside{opacity:.35;background:#fff;border-style:dashed;cursor:default}.day.weekend{background:#fff7fa}.day.festival{background:linear-gradient(160deg,var(--day-tint,#ffe9f2),#fff9fc);border-color:#f5d2df}.day.rest{background:linear-gradient(150deg,#fff0f4,#fff8fa)}.day.workday{background:#f5f6fb;border-color:#e5e6ef}.day.today{outline:2px solid #ec89aa;outline-offset:-2px}.day.today:after{content:'';position:absolute;width:4px;height:4px;background:#dc7098;border-radius:50%;right:7px;bottom:7px}.day .date{font-weight:900;font-size:16px;line-height:20px;color:#92758a}.day.festival .date{color:#d06691}.day .tag{position:absolute;right:4px;top:4px;font-size:9px;line-height:14px;min-width:15px;background:#e988aa;color:white;border-radius:4px;font-weight:900}.day .tag.work{background:#8d9db7}.festival-sticker{font-size:21px;line-height:24px;height:25px;display:block;transform-origin:center;filter:drop-shadow(0 2px 0 #fff9);user-select:none}.day-label{font-size:10px;line-height:1.22;font-weight:900;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#ba7293}.day .rest-label,.day .work-label{font-size:10px;color:#cd9aaf;margin-top:8px}.day .work-label{color:#929fba}.day .note-dot{position:absolute;bottom:4px;left:6px;width:6px;height:6px;border-radius:50%;background:#d87ba4}.month-footer{margin-top:17px;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 13px;background:var(--foot-bg);border-radius:14px;font-size:11px;color:#a77a90}.month-footer span:first-child{font-weight:850}.month-footer span:last-child{white-space:nowrap;color:var(--accent)}
+.sticker-flag{animation:waving 1.8s ease-in-out infinite;transform-origin:20% 80%}.sticker-flower{animation:small-dance 2.6s ease-in-out infinite}.sticker-pumpkin{animation:small-dance 1.9s ease-in-out infinite}.sticker-drop{animation:float 2.5s ease-in-out infinite}.sticker-leaf{animation:fall 3.5s ease-in-out infinite}.sticker-mitten{animation:float 2.4s ease-in-out infinite}.sticker-bag{animation:shopping 2s infinite}.sticker-snow{animation:snowturn 6s linear infinite}.sticker-turkey{animation:small-dance 2.2s ease-in-out infinite}.sticker-snowman{animation:small-dance 3s ease-in-out infinite}.sticker-dumpling{animation:float 2s infinite}.sticker-apple{animation:float 2.3s infinite}.sticker-tree{animation:small-dance 2.1s infinite}.sticker-sparkle{animation:twinkle 1.8s infinite}.sticker-firework{animation:fireworks 2s infinite}.sticker-bowl{animation:float 2.4s infinite}.sticker-candy{animation:shopping 2.2s infinite}
+.jingle{display:flex;align-items:center;justify-content:center;gap:6px;color:#c391aa;font-size:12px;font-weight:750;margin-top:26px}.jingle span{display:inline-block;animation:twinkle 3s infinite}.page-footer{text-align:center;color:#b79cac;font-size:11px;line-height:2;margin:25px auto 0;max-width:900px}.page-footer .sources{margin-top:8px}.page-footer a{text-decoration:none;border-bottom:1px dotted #dda6bb}
+.dialog-cover{position:fixed;z-index:20;inset:0;background:rgba(95,53,78,.27);backdrop-filter:blur(7px);display:none;align-items:center;justify-content:center;padding:18px}.dialog-cover.visible{display:flex;animation:fade-in .2s ease both}.dialog{position:relative;background:linear-gradient(180deg,#fff4f8,#fff);border:2px solid white;width:min(100%,420px);max-height:min(92vh,780px);overflow-y:auto;border-radius:30px;box-shadow:0 30px 90px rgba(95,53,78,.24);text-align:center;padding:28px 28px 25px;animation:dialog-in .28s cubic-bezier(.2,.8,.2,1) both}.dialog:before{content:'✦          ♡          ✦';letter-spacing:28px;color:#efacc6;font-size:19px;position:absolute;top:23px;left:24px;right:0;opacity:.65;pointer-events:none}.close{position:absolute;top:14px;right:16px;background:white;border:1px solid #f7dce7;width:29px;height:29px;border-radius:50%;font-size:18px;color:#b47c96}.modal-emoji{font-size:58px;margin-top:10px;display:block;animation:float 2s ease-in-out infinite}.modal-date{font-size:12px;font-weight:900;color:#bd8fa6;margin-top:8px;letter-spacing:1px}.modal-title{margin:10px 0;font-size:27px;color:#c8799c}.modal-description{font-size:14px;line-height:1.9;color:#99798c;margin:10px auto 16px}.wish-wrap{text-align:left;background:white;border:1px dashed #eed1dd;padding:15px 16px 11px;border-radius:17px}.wish-wrap label{display:block;color:#bd82a0;font-size:12px;font-weight:900;margin-bottom:10px}.wish-wrap textarea{resize:vertical;min-height:64px;width:100%;padding:11px;border-radius:12px;border:1px solid #f6e5ec;background:#fffbfd;font-size:13px;color:#7f6574}.wish-wrap .write-btn{display:block;margin:11px 0 0 auto;border:none;color:white;font-size:12px;background:#df8daa;border-radius:20px;padding:9px 18px;font-weight:800}.toast{position:fixed;z-index:30;bottom:22px;left:50%;transform:translateX(-50%);border-radius:30px;color:#a56989;background:#fff;border:1px solid #f2dbe5;padding:10px 19px;box-shadow:0 8px 24px #e9c9d7;white-space:nowrap;font-size:12px;display:none}.toast.show{display:block;animation:fade-in .2s}
+.confetti{position:fixed;pointer-events:none;z-index:31;animation:confetti-fly 1s ease-out forwards;font-size:14px;will-change:transform,opacity}
+.motion-off *, .motion-off *:before,.motion-off *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+@keyframes wave{0%,100%{transform:rotate(0)}40%,70%{transform:rotate(-17deg)}}@keyframes tail{0%,100%{transform:rotate(0)}50%{transform:rotate(-16deg)}}@keyframes blink{0%,43%,47%,100%{transform:scaleY(1)}45%{transform:scaleY(.12)}}@keyframes hearts{0%,100%{transform:translateY(0);opacity:.9}50%{transform:translateY(-11px);opacity:1}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}@keyframes small-dance{0%,100%{transform:rotate(-9deg)}50%{transform:rotate(10deg)}}@keyframes waving{0%,100%{transform:rotate(-10deg)}45%{transform:rotate(15deg)}}@keyframes fall{0%,100%{transform:translate(0,0) rotate(-16deg)}50%{transform:translate(2px,3px) rotate(19deg)}}@keyframes shopping{0%,100%{transform:translateY(0) rotate(-3deg)}30%{transform:translateY(-5px) rotate(7deg)}55%{transform:translateY(0)}}@keyframes snowturn{to{transform:rotate(360deg)}}@keyframes twinkle{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.55;transform:scale(.8)}}@keyframes fireworks{0%,100%{transform:scale(.95);filter:drop-shadow(0 0 0 #ff88b3)}50%{transform:scale(1.2);filter:drop-shadow(0 0 5px #ff88b3)}}@keyframes fade-in{from{opacity:0}to{opacity:1}}@keyframes dialog-in{from{opacity:0;transform:translateY(15px) scale(.95)}to{opacity:1;transform:translateY(0) scale(1)}}@keyframes confetti-fly{0%{transform:translate(0,0) rotate(0) scale(.7);opacity:1}100%{transform:translate(var(--dx),var(--dy)) rotate(var(--rot)) scale(1.3);opacity:0}}
+@media(max-width:950px){.hero{grid-template-columns:1fr 270px;padding:25px 34px}.month{padding:22px 16px 18px}.days,.weekdays{gap:4px}.day{padding:5px 1px 2px;min-height:54px}.festival-sticker{font-size:19px}.day-label{font-size:9px}.month-number{font-size:53px}.month-character{width:70px}.mini-cat{width:71px}}
+@media(max-width:700px){.site{padding:20px 14px 45px}.header-bar{padding-bottom:14px}.logo{font-size:12px}.logo-paw{width:31px;height:31px}.pill{padding:9px 11px;font-size:11px}.header-actions{gap:6px}.hero{grid-template-columns:1fr 110px;min-height:185px;border-radius:26px;padding:25px 22px}.hero:before{right:-70px}.hero h1{font-size:29px;margin:11px 0}.hero-sub{font-size:12px}.eyebrow{font-size:10px}.hero-badges{margin-top:12px}.hero-badges span{font-size:9px;padding:5px 9px}.hero-art{min-height:120px}.hero-cat{width:160px;transform:translateX(-20px)}.board-heading{display:block;margin:26px 4px 15px}.board-heading h2{font-size:19px}.legend{margin-top:12px}.board{grid-template-columns:1fr;gap:17px}.month{padding:23px 19px 16px;border-radius:24px}.month-number{font-size:56px}.month-character{width:88px}.mini-cat{width:85px}.days,.weekdays{gap:5px}.day{min-height:57px}.festival-sticker{font-size:22px}.day-label{font-size:10px}}
+@media(max-width:380px){.hero{grid-template-columns:1fr 65px}.hero-cat{width:128px;transform:translateX(-36px)}.hero-badges span:last-child{display:none}.day{aspect-ratio:1/1.3;min-height:52px}.month{padding:19px 12px}.days,.weekdays{gap:4px}.day-label{font-size:9px}.festival-sticker{font-size:19px}.day .date{font-size:14px}.month-number{font-size:50px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media print{body{background:#fff!important}.site{padding:0;max-width:none}.header-bar,.board-heading .legend,.pill,.page-footer,.jingle{display:none!important}.hero{min-height:130px;box-shadow:none;border:1px solid #eac8d6;break-after:avoid;padding:12px 25px}.hero h1{font-size:30px}.hero-art{min-height:105px}.hero-cat{width:135px}.board-heading{margin:12px}.board{gap:10px;grid-template-columns:1fr 1fr}.month{box-shadow:none;border:1px solid #eac8d6;padding:13px;break-inside:avoid}.month-top{min-height:68px}.month-number{font-size:43px}.month-character{height:58px}.mini-cat{height:60px;width:60px}.days{gap:3px}.day{min-height:50px;aspect-ratio:1/1.03}.festival-sticker{font-size:16px;line-height:17px;height:17px}.day-label{font-size:8px}.date{font-size:13px}.month-footer{margin-top:8px;padding:7px}.board-heading h2{font-size:15px}}
+/* MEOW LOVE 扩展样式：保留原有猫咪日历的设计 */
+:root{--love:#d6689b;--milk:#fff8fb;--violet:#f2e6ff}
+input,select,button,textarea{font:inherit}input:focus-visible,select:focus-visible{outline:2px solid #d778a4;outline-offset:2px}input,textarea,select{min-width:0}
+.love-top{margin:20px 0;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;background:#fff;border:1px solid #f4ddea;border-radius:23px;padding:12px 16px;box-shadow:0 6px 23px #e9c9d539}
+.sync-badge{display:inline-flex;gap:8px;align-items:center;font-size:12px;font-weight:850;color:#a7738d}.sync-light{display:inline-block;border-radius:50%;width:9px;height:9px;background:#eca4bf;box-shadow:0 0 0 4px #fee9f2}.sync-light.online{background:#5fc69d;box-shadow:0 0 0 4px #e4faf2}.tiny{font-size:11px;color:#bb9bab}.love-top-actions{display:flex;gap:7px;flex-wrap:wrap}.tinybtn,.act-btn{border:1px solid #f0cddd;border-radius:999px;padding:8px 13px;color:#bd6993;background:#fff8fc;font-weight:800;font-size:12px;transition:transform .15s}.tinybtn:hover,.act-btn:hover{transform:translateY(-2px);background:#ffe9f4}.tinybtn.hot,.act-btn.hot{background:#e991b3;color:white;border-color:#e991b3}
+.love-nav{display:flex;gap:8px;overflow-x:auto;padding:8px 4px 15px;scrollbar-color:#e8aec6 #fff6fa;scrollbar-width:thin}.love-nav button{flex:none;border:1px solid #f1d3df;color:#b27b98;background:#fff;border-radius:15px;font-size:12px;font-weight:850;padding:11px 15px;box-shadow:0 2px 7px #f3dbe5}.love-nav button:hover{background:#ffe9f4}
+.love-overview{margin:12px 0 24px}.section-heading{margin:32px 7px 15px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.section-heading h2{margin:0;font-size:22px;color:#b56d91}.section-heading p{font-size:12px;color:#bd9eac;margin:5px 0 0;line-height:1.6}.section-sub{font-size:11px;color:#c196ab;font-weight:850}.overview-grid{display:grid;grid-template-columns:1.3fr repeat(3,minmax(0,1fr));gap:13px}.stat{background:#fff;border:1px solid #f4dfe7;border-radius:24px;padding:23px 18px;box-shadow:0 9px 25px #efd7e23d;position:relative;overflow:hidden;min-height:133px}.stat.highlight{background:linear-gradient(120deg,#ffe1eb,#fff3f8);border-color:#ffdce9}.stat:before{content:'♡';position:absolute;right:10px;top:-19px;font-size:76px;color:#f9d6e5;pointer-events:none}.stat .small{color:#a67b94;font-weight:850;font-size:12px}.stat .big{font-size:37px;font-weight:1000;color:#d477a0;letter-spacing:-1px;margin:11px 0 5px}.stat .hint{font-size:11px;color:#b397a5}.stat input{font-size:12px;width:100%;max-width:170px;background:#fff;border:1px solid #ebcadb;padding:8px;border-radius:12px}
+.love-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.love-section{scroll-margin-top:20px;min-width:0}.love-card{background:#fff;border:1px solid #f0d9e5;border-radius:27px;padding:22px;box-shadow:0 10px 35px #e3bfd32e;min-width:0}.love-card .section-heading{margin:0 0 16px}.cardtop{display:flex;align-items:center;justify-content:space-between;gap:10px}.count-chip{background:#fff0f6;border:1px solid #f6d5e3;color:#c987a7;font-size:11px;border-radius:20px;padding:5px 10px;font-weight:850}
+.love-form{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.love-input,.love-select,.love-textarea{border:1px solid #efd4df;border-radius:13px;background:#fffbfd;padding:11px 12px;color:#855f73;font-size:13px;min-width:0;flex:1;width:100%}.love-textarea{resize:vertical;min-height:73px}.love-form .love-input{flex:1 1 145px}.love-form .love-select{flex:0 1 130px}.love-form .tinybtn{align-self:center}.form-wrap{background:#fff9fc;border:1px dashed #f0d0df;padding:13px;border-radius:17px}.form-row{display:flex;gap:8px;flex-wrap:wrap}.form-row>label{flex:1 1 130px;min-width:0;font-size:11px;font-weight:850;color:#ad8297}.form-row>label>input,.form-row>label>select{display:block;width:100%;margin-top:6px}.form-wrap .love-textarea{margin:7px 0}.form-wrap button[type=submit]{margin:9px 0 0 auto;display:block}.form-caption{color:#b491a6;font-size:11px;margin:5px 0}
+.entries{display:flex;flex-direction:column;gap:9px;max-height:400px;overflow-y:auto;padding:2px;scrollbar-color:#f0c6d9 transparent}.entry{border:1px solid #f4e3eb;border-radius:16px;padding:13px;background:#fffbfd;display:flex;align-items:flex-start;gap:10px;min-width:0}.entry .ico{display:grid;place-items:center;flex:0 0 33px;height:33px;border-radius:12px;background:#ffecf4;font-size:19px}.entry .content{flex:1;min-width:0}.entry .title{font-size:13px;font-weight:850;color:#9f6585;word-wrap:break-word;white-space:pre-wrap}.entry .desc{font-size:12px;line-height:1.6;color:#a6889a;white-space:pre-wrap;overflow-wrap:anywhere;margin-top:5px}.entry .meta{color:#c29dae;font-size:10px;margin-top:7px}.entry .tools{display:flex;gap:5px;align-items:center}.icon-btn{border:0;background:#fff0f6;border-radius:9px;color:#bc789a;padding:5px 7px;font-size:12px}.icon-btn:hover{background:#fcdbe9}.entry.done{opacity:.58}.entry.done .title{text-decoration:line-through}.empty{background:#fff9fc;border:1px dashed #f2d9e6;border-radius:15px;padding:20px;color:#bba0ae;text-align:center;font-size:12px;line-height:1.8}
+.mood-choices,.love-actions{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.mood-choices button{font-size:22px;padding:8px 12px;border:1px solid #f5dce8;background:#fff9fb;border-radius:14px}.mood-choices button.active{background:#ffe1ef;border-color:#e78fb5;box-shadow:0 0 0 2px #f8d7e7}.mood-choices button:hover{transform:translateY(-2px)}.two-moods{display:grid;grid-template-columns:1fr 1fr;gap:9px}.mood-person{background:#fff5fa;padding:12px;border-radius:15px;text-align:center;font-size:12px}.mood-person .face{font-size:29px;margin:6px}
+.chat-window{height:260px;overflow-y:auto;background:linear-gradient(#fffbfd,#fff4f9);border:1px solid #f5e1e9;border-radius:18px;padding:12px;display:flex;flex-direction:column;gap:9px;scrollbar-color:#efbdd2 transparent}.bubble{max-width:88%;padding:9px 13px;border-radius:15px 15px 15px 5px;background:#fff;border:1px solid #f7ddea;align-self:flex-start;color:#97738a;font-size:12px;white-space:pre-wrap;overflow-wrap:anywhere}.bubble.mine{align-self:flex-end;background:#ffdfed;border-color:#f7c4da;border-radius:15px 15px 5px 15px}.bubble .by{font-size:10px;color:#bb9aa9;margin-top:6px}.chat-form{display:flex;gap:8px;margin:9px 0 0}.chat-form input{flex:1}
+.love-actions button{background:linear-gradient(140deg,#ffebf2,#fff4fb);border:1px solid #f1cddd;border-radius:16px;color:#be6f94;padding:13px 14px;flex:1;font-size:12px;font-weight:900;min-width:85px}.love-actions button span{display:block;font-size:26px;margin-bottom:5px;animation:hearts 3s ease infinite}.love-actions button:active{transform:scale(.92)}.sprinkle{position:fixed;top:0;left:0;z-index:65;pointer-events:none;font-size:23px;animation:sprinkle 1.35s ease-out forwards}@keyframes sprinkle{to{transform:translate(var(--tx),var(--ty)) rotate(65deg);opacity:0}}
+.kitty-box{display:grid;grid-template-columns:115px 1fr;gap:13px;align-items:center;background:linear-gradient(120deg,#fff2f6,#fff);border-radius:18px;padding:13px;margin-bottom:11px}.kitty-box svg{width:100%;animation:float 2.5s infinite}.kitty-level{font-size:13px;color:#aa7395;font-weight:900}.meter{height:12px;border-radius:20px;background:#f5dbe6;overflow:hidden;margin:9px 0}.meter span{display:block;height:100%;border-radius:20px;background:linear-gradient(90deg,#eaa9ca,#dd7aa5);transition:width .4s}.kitty-box p{font-size:11px;line-height:1.7;margin:5px 0;color:#b691a5}.capsule-locked{background:linear-gradient(130deg,#fff2f6,#f6f0ff);border:1px dashed #eabfd9;border-radius:12px;padding:12px;font-size:12px;color:#b27699}.coupon{background:linear-gradient(105deg,#fff1f7,#fff8fb);border:2px dashed #e9afc8;border-radius:17px;padding:12px;display:flex;align-items:center;gap:12px}.coupon .ticket{font-size:28px}.hero h1 span{white-space:normal}.heart-banner{font-size:13px;font-weight:850;color:#ca86a5;margin-top:9px}.prompt-box{background:linear-gradient(110deg,#fff1f8,#f7f0ff);border:1px solid #efd8ec;border-radius:19px;padding:16px;color:#b26c9b}.prompt-box .question{font-size:16px;font-weight:900;line-height:1.7}.prompt-box .answer{font-size:12px;color:#98718a;padding:9px;margin:8px 0;background:#ffffffa1;border-radius:9px}
+.love-modal{position:fixed;inset:0;z-index:45;display:none;background:rgba(83,45,68,.34);backdrop-filter:blur(7px);align-items:center;justify-content:center;padding:18px}.love-modal.visible{display:flex}.love-modal-panel{background:linear-gradient(#fff5fa,#fff);border:2px solid white;border-radius:30px;padding:27px;width:min(100%,505px);max-height:94vh;overflow-y:auto;box-shadow:0 24px 75px #7b3f5c45;position:relative}.love-modal-panel h2{color:#be7197;margin:5px 0 8px}.love-modal-panel p{color:#a9869b;font-size:12px;line-height:1.8}.love-modal-panel .close-modal{position:absolute;top:13px;right:14px;border:0;background:#fff;border-radius:50%;font-size:22px;width:31px;height:31px;color:#b36b94}.love-modal-panel label{display:block;color:#aa748f;font-weight:850;font-size:12px;margin:12px 0 4px}.love-modal-panel input{width:100%;margin-top:5px}.love-modal-panel .form-row button{margin:4px 0}.invite-display{background:#fff3f9;border:1px dashed #e1a4c2;border-radius:13px;padding:15px;font-size:20px;letter-spacing:3px;color:#bb6290;text-align:center;font-weight:950;word-break:break-all}.secret-note{background:#fff9ed;color:#aa8571;border-radius:12px;padding:10px 12px;font-size:11px;line-height:1.7}.account-msg{min-height:20px;font-size:12px;color:#ba7194;margin:8px 0}.cloud-only{display:none}.cloud-mode .cloud-only{display:block}.top-hint{font-size:12px;color:#be88a4;margin-top:8px}.day-extra{margin-top:10px;padding:8px;background:#fffafd;border:1px solid #f4e3eb;border-radius:13px;max-height:135px;overflow-y:auto;text-align:left;font-size:11px;color:#ac8094}.day.has-love .date:before{content:'♥';position:absolute;left:5px;top:3px;font-size:9px;color:#eb93b5}.day.romance-day{background:#fff0f8}.day .love-mark{position:absolute;bottom:4px;right:4px;font-size:11px;color:#d979a5}.today-strip{margin:15px 0;color:#aa8199;font-size:12px;line-height:1.8;background:#fff;border-radius:18px;border:1px dashed #f0d4e1;padding:14px 17px}.love-section.full{grid-column:1/-1}.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:12px}.photo-item{border:1px solid #f5d8e6;border-radius:17px;overflow:hidden;background:#fff9fc}.photo-item img{display:block;width:100%;height:130px;object-fit:cover}.photo-item .caption{padding:8px;font-size:11px;color:#a77390}.photo-item .caption button{float:right}.file-label{display:block;font-size:12px;color:#bc8aa1;font-weight:850;margin:9px 0}.file-label input{max-width:100%}
+@media(max-width:1100px){.overview-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:780px){.love-grid{grid-template-columns:1fr}.love-section.full{grid-column:auto}.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.love-top{display:block}.love-top-actions{margin-top:10px}.overview-grid{gap:9px}.stat{padding:17px 13px;min-height:120px}.stat .big{font-size:29px}.love-card{padding:16px;border-radius:21px}.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.love-nav button{padding:9px 11px}.hero-sub br{display:none}.section-heading h2{font-size:19px}.two-moods{grid-template-columns:1fr 1fr}}
+@media print{.love-top,.love-nav,.love-overview,.love-grid,.love-modal,.today-strip,.section-heading.love-only{display:none!important}}
+
+.hero-second-cat{position:absolute;width:136px;right:-8px;bottom:4px;z-index:2;transform:rotate(-10deg);animation:float 3s .5s ease-in-out infinite;filter:drop-shadow(0 7px 7px #e8adbf5c)}
+@media(max-width:700px){.hero-second-cat{width:73px;right:-5px;bottom:15px}}
+
+/* 双人小游戏：奶油粉 + 紫色糖果棋盘，移动端适配 */
+.game-card{position:relative;overflow:hidden}.game-card::after{content:'♡';position:absolute;right:23px;top:7px;color:#fbe2ec;font-size:58px;pointer-events:none;z-index:0}.game-card>*{position:relative;z-index:1}
+.game-badge{display:inline-flex;gap:5px;align-items:center;border-radius:999px;background:#fff0f7;color:#c26c95;border:1px solid #f4d2e3;font-size:11px;padding:5px 10px;font-weight:850}
+.game-status{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin:10px 0;color:#a2718b;font-size:12px}.game-status strong{color:#b9548b}
+.game-prompt{margin:14px 0;padding:22px 15px;background:linear-gradient(140deg,#fff0f7,#f8efff);border-radius:22px;border:1.5px dashed #eeb3cf;text-align:center;min-height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;box-shadow:inset 0 2px 5px #ffffff90}
+.game-prompt .game-question{font-size:17px;font-weight:900;line-height:1.75;color:#955973}.game-prompt .game-icon{font-size:36px;display:block;animation:float 2.7s ease-in-out infinite}.game-score{display:flex;gap:10px;flex-wrap:wrap}.score-pill{flex:1;min-width:105px;background:#fff5fa;border:1px solid #f0d7e3;border-radius:17px;padding:12px;font-size:12px;text-align:center}.score-pill b{display:block;font-size:19px;color:#c3689a;margin-top:5px}.score-pill.my-turn{background:#ffe0ee;border-color:#e49abb;box-shadow:0 0 0 2px #ffeefa}
+.game-controls{display:flex;flex-wrap:wrap;gap:8px;margin-top:11px}.game-controls button{flex:1;min-width:96px}.game-history{background:#fffbfe;border:1px solid #f5e4ec;border-radius:15px;padding:12px;margin-top:13px;max-height:152px;overflow:auto;font-size:12px;color:#a57791;line-height:1.8}.game-history b{color:#ad648d}
+.game-answer{width:100%;margin:4px 0 0}.game-hidden{display:none!important}.game-hint{font-size:11px;color:#ab8197;line-height:1.75;margin:10px 0 0}.game-busy{opacity:.62;pointer-events:none}
+.mono-shell{margin-top:12px}.mono-board{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-template-rows:repeat(5, minmax(56px,auto));gap:5px;background:#f7eaf2;padding:6px;border:2px solid #efcadd;border-radius:18px;overflow:hidden}
+.mono-cell{position:relative;border-radius:10px;padding:5px 3px;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;background:#fffdfd;border:1px solid #efdee8;box-shadow:0 2px 5px #d8a7c323;text-align:center;grid-area:var(--row)/var(--col)}
+.mono-cell.prop{background:#fff0f7}.mono-cell.event{background:#fff8df}.mono-cell.start{background:#e6fcf6}.mono-cell.penalty{background:#fbe9ee}.mono-cell.bonus{background:#f0ebff}
+.mono-cell .cell-icon{font-size:17px;line-height:1}.mono-cell .cell-name{font-size:9px;font-weight:900;color:#a7708d;line-height:1.25}.mono-cell .cell-price{font-size:9px;color:#bb94a8}.mono-cell .owned{position:absolute;right:2px;top:2px;border-radius:5px;padding:1px 3px;font-size:8px;color:#fff;background:#ec8eae}.mono-cell .owned.partner{background:#a5a0d9}.tokens{position:absolute;bottom:1px;display:flex;gap:2px;line-height:1;font-size:12px}.mono-center{grid-area:2/2/5/5;background:linear-gradient(145deg,#fffafa,#ffedf6);border:1px dashed #ebc5d7;border-radius:14px;display:flex;align-items:center;justify-content:center;text-align:center;flex-direction:column;gap:8px;padding:12px;color:#bd7195}.mono-center strong{font-size:17px}.mono-center .dice{font-size:28px;letter-spacing:3px;animation:float 2.4s ease-in-out infinite}.mono-center small{font-size:10px;line-height:1.6}
+.mono-center .mono-center-cat{font-size:31px;animation:small-dance 3s infinite}
+@media(max-width:700px){.mono-board{grid-template-rows:repeat(5,minmax(46px,auto));gap:3px;padding:4px}.mono-cell{padding:3px 1px;border-radius:6px}.mono-cell .cell-name{font-size:8px}.mono-cell .cell-price{font-size:8px}.mono-cell .cell-icon{font-size:15px}.tokens{font-size:10px}.game-prompt .game-question{font-size:15px}}
+@media print{#love-truth,#love-monopoly{display:none!important}}
+
+</style>
+</head>
+<body>
+<div class="site">
+  <header class="header-bar">
+    <div class="logo"><span class="logo-paw">🐾</span> MEOW LOVE · 双人恋爱日记</div>
+    <div class="header-actions">
+      <button class="pill" id="jump-today" type="button">📍 找到今天</button>
+      <button class="pill primary" id="toggle-motion" type="button" aria-pressed="false">✨ 动画开启</button>
+    </div>
+  </header>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <div class="eyebrow">♡ LITTLE CAT CALENDAR · 2026—2027 ♡</div>
+      <h1 id="hero-title">两只猫咪的<br><span>收藏我们的小浪漫</span></h1>
+      <p class="hero-sub">把约会、纪念日、心情打卡和游戏时光，<br>都装进只属于两个人的粉色星球 ♡</p>
+      <div class="hero-badges"><span>🐈 猫咪简笔画</span><span>🎀 19 个节日 & 节气</span><span>🎮 双人互动小游戏</span><span>🎲 猫咪大富翁</span></div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg class="hero-cat" viewBox="0 0 310 240" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="156" cy="219" rx="101" ry="11" fill="#efbdd0" opacity=".34"/>
+        <path class="cat-tail" d="M92 177C28 194 49 131 67 143C43 171 83 167 96 157" fill="none" stroke="#bd879e" stroke-width="17" stroke-linecap="round"/>
+        <path d="M111 131C76 144 80 212 131 215H195C226 205 229 141 196 127" fill="#fffefc" stroke="#b77c98" stroke-width="3.2"/>
+        <path d="M94 91 106 26 145 60M207 91 193 26 157 61" fill="#fffefc" stroke="#b77c98" stroke-width="3.6" stroke-linejoin="round"/>
+        <path d="M110 71 115 42 133 68M190 69 189 43 170 66" fill="#ffc2d8"/>
+        <ellipse cx="151" cy="113" rx="79" ry="66" fill="#fffefc" stroke="#b77c98" stroke-width="3.3"/>
+        <g class="cat-eyes"><path d="M118 109q9-12 18 0M171 109q9-12 18 0" stroke="#8c647c" stroke-linecap="round" stroke-width="4" fill="none"/></g>
+        <ellipse cx="110" cy="124" rx="15" ry="9" fill="#ffc8d8" opacity=".9"/><ellipse cx="192" cy="124" rx="15" ry="9" fill="#ffc8d8" opacity=".9"/>
+        <path d="M147 119Q152 116 157 119L152 124Z" fill="#d98cac"/><path d="M152 124q-8 11-15 2m15-2q7 11 15 2" fill="none" stroke="#936c81" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M100 118 68 112m32 16-30 6m127-16 29-5m-29 15 30 7" stroke="#9f7b8b" stroke-width="2.1" stroke-linecap="round"/>
+        <path d="M127 157q-10 22-8 48m58-48q14 21 12 45" fill="none" stroke="#b77c98" stroke-width="3" stroke-linecap="round"/>
+        <path d="M141 167q13-12 24 0q-11 18-24 0" fill="#f4a4c0"/><circle cx="142" cy="163" r="7" fill="#ffc0d4"/><circle cx="168" cy="164" r="7" fill="#ffc0d4"/>
+        <g class="cat-paw"><path d="M210 149Q244 116 257 136q8 14-12 26l-22 11" fill="#fffefc" stroke="#b77c98" stroke-width="3"/><path d="m231 142 5 5m1-14 6 7" stroke="#f3a8c0" stroke-width="3" stroke-linecap="round"/></g>
+        <path class="hero-heart-1" d="M253 58c-15-16-30 5-6 23l6 5 6-5c23-17 7-39-6-23" fill="#f197b7"/>
+        <path class="hero-heart-2" d="M72 56c-10-13-24 2-8 18l8 7 8-7C97 59 81 44 72 56" fill="#f5bdd0"/>
+        <path class="star-1" d="m270 112 4 10 10 4-10 4-4 10-4-10-10-4 10-4Z" fill="#f8b5cf"/>
+        <path class="star-2" d="m48 105 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z" fill="#eaa0c2"/>
+      </svg>
+      <svg class="hero-second-cat" viewBox="0 0 120 130" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M18 77 25 23l28 19M99 77 91 23 66 42" fill="#ffeaf2" stroke="#b97e9b" stroke-width="3" stroke-linejoin="round"/><ellipse cx="59" cy="78" rx="49" ry="42" fill="#fff0f6" stroke="#b97e9b" stroke-width="3"/><path d="M34 78q7-9 14 0m23 0q7-9 14 0" fill="none" stroke="#976e84" stroke-width="3.5" stroke-linecap="round"/><ellipse cx="28" cy="90" rx="10" ry="5" fill="#ffc0d7"/><ellipse cx="90" cy="90" rx="10" ry="5" fill="#ffc0d7"/><path d="m55 87 4-3 4 3-4 3zm4 2q-7 9-13 1m13-1q7 9 13 1" stroke="#bd7397" stroke-width="2" fill="#dd8cb1"/><path d="M20 83 0 79m21 13L0 95m98-12 20-4M97 93l21 4" fill="none" stroke="#b97e9b" stroke-width="2"/><path d="M41 47q16-24 37 0" fill="none" stroke="#fff" stroke-width="5"/><path d="m57 46 5 6 9-10" fill="none" stroke="#ed89af" stroke-width="4" stroke-linecap="round"/><path d="M79 9q9-13 18 0 10 13-9 26Q69 19 79 9Z" fill="#fa92b9"/></svg>
+    </div>
+  </section>
+
+  <div class="love-top" id="sync-bar"><div><div class="sync-badge"><i class="sync-light" id="sync-light"></i><span id="sync-text">本地体验模式 · 暂未联网同步</span></div><div class="top-hint" id="couple-subtitle">每一天都可以留下两个人的心动痕迹 ♡</div></div><div class="love-top-actions"><button class="tinybtn" id="copy-invite" type="button" hidden>💌 复制邀请码</button><button class="tinybtn hot" type="button" id="open-cloud">☁️ 开启双人同步</button></div></div>
+  <nav class="love-nav" aria-label="恋爱空间导航">
+    <button type="button" data-target="love-overview">🏡 甜蜜首页</button><button type="button" data-target="board-title">🗓️ 四个月日历</button><button type="button" data-target="love-mood">🌷 心情打卡</button><button type="button" data-target="love-dates">🎡 约会计划</button><button type="button" data-target="love-memories">📷 恋爱相册</button><button type="button" data-target="love-capsules">💌 时光胶囊</button><button type="button" data-target="love-coupons">🎟️ 兑换券</button>
+  <button type="button" data-target="love-truth">💗 真心话大冒险</button><button type="button" data-target="love-monopoly">🎲 猫咪大富翁</button></nav>
+  <section class="love-overview" id="love-overview" aria-labelledby="love-overview-title">
+    <div class="section-heading"><div><h2 id="love-overview-title">💗 我们的恋爱星球</h2><p>两个小笨蛋，把琐碎的日子过成值得收藏的宝藏。</p></div><span class="section-sub" id="today-date-label"></span></div>
+    <div class="overview-grid"><div class="stat highlight"><div class="small">💕 在一起的第</div><div class="big" id="love-days">—</div><div class="hint">设置恋爱纪念日，开始甜蜜计时</div></div><div class="stat"><div class="small">📆 下一次纪念日</div><div class="big" id="next-anniversary">—</div><div class="hint" id="anniversary-hint">甜甜的倒计时</div></div><div class="stat"><div class="small">🎮 已开启的小游戏</div><div class="big" id="game-count">0 / 2</div><div class="hint">真心话 & 猫咪大富翁</div></div></div>
+    <div class="today-strip" id="today-strip">🌸 欢迎来到我们的粉色宇宙。点击下方卡片，就可以一起收集恋爱碎片。</div>
+  </section>
+
+  <section aria-labelledby="board-title">
+    <div class="board-heading">
+      <div><h2 id="board-title">✿ 我们的四个月 · 2026.10 — 2027.01</h2><p>周一开始的一周 · 点击任意日期，记录两个人的秘密日常</p></div>
+      <div class="legend"><span><b>休</b> 法定假期</span><span><b class="work">班</b> 调休上班</span><span>💗 特色节日</span><span>● 私人 / 共享笔记</span></div>
+    </div>
+    <div class="board" id="calendar-board"></div>
+  </section>
+
+  <div class="section-heading love-only"><div><h2>🎀 我们的小小互动屋</h2><p>同步的不是数据，是所有「我有在认真喜欢你」的小证据。</p></div></div>
+  <div class="love-grid" id="love-modules">
+    <section class="love-section" id="love-truth"><div class="love-card game-card"><div class="section-heading"><div><h2>💗 真心话大冒险</h2><p>24 道真心话 + 24 个大冒险，轮流抽卡，留下只属于你们的答案。</p></div><span class="game-badge">💌 心动卡牌</span></div><div id="truth-game" aria-live="polite"></div></div></section>
+    <section class="love-section" id="love-monopoly"><div class="love-card game-card"><div class="section-heading"><div><h2>🎲 猫咪大富翁</h2><p>16 格双人小地图，买地、收租、抽惊喜，看看谁是喵币富翁！</p></div><span class="game-badge">🏡 约会商业街</span></div><div id="monopoly-game" aria-live="polite"></div></div></section>
+    <section class="love-section" id="love-mood"><div class="love-card"><div class="section-heading"><div><h2>🌷 双人心情打卡</h2><p>今天你开心吗？给对方一个温柔的信号。</p></div></div><div id="mood-today"></div><div class="mood-choices" id="mood-choices" aria-label="选择今天的心情"><button data-mood="🥰" title="幸福">🥰</button><button data-mood="😊" title="开心">😊</button><button data-mood="🥹" title="感动">🥹</button><button data-mood="🥺" title="想你">🥺</button><button data-mood="😴" title="困困">😴</button><button data-mood="😭" title="难过">😭</button><button data-mood="😤" title="生气">😤</button></div><form class="love-form" data-form="mood"><input class="love-input" name="body" maxlength="180" placeholder="想对TA说的心情小句子…" aria-label="心情文字"><button class="tinybtn hot" type="submit">打卡 ♡</button></form></div></section>
+    <section class="love-section" id="love-dates"><div class="love-card"><div class="section-heading"><div><h2>🎡 约会计划表</h2><p>你来挑时间，我来准备惊喜。</p></div><button class="tinybtn" id="date-random" type="button">🎲 灵感抽签</button></div><form class="form-wrap" data-form="dateplan"><div class="form-row"><label>约会主题<input class="love-input" name="title" maxlength="100" placeholder="去海边等日落" required></label><label>约会日期<input class="love-input" type="date" name="event_date"></label></div><input class="love-input" name="body" maxlength="250" placeholder="地点 / 想做的事 / 备注…" style="margin-top:8px"><button type="submit" class="tinybtn hot">安排约会 💗</button></form><div class="entries" id="date-list" style="margin-top:13px"></div></div></section>
+    <section class="love-section" id="love-wishes"><div class="love-card"><div class="section-heading"><div><h2>🌠 情侣愿望清单</h2><p>把未来想一起做的事，一个个点亮。</p></div></div><form class="love-form" data-form="wish"><input class="love-input" name="title" maxlength="120" placeholder="一起去看一场流星雨…" required><button class="tinybtn hot" type="submit">许愿 ✨</button></form><div class="entries" id="wish-list"></div></div></section>
+    <section class="love-section" id="love-memories"><div class="love-card"><div class="section-heading"><div><h2>📷 恋爱回忆相册</h2><p>一起上传照片，为回忆加上一句旁白。</p></div></div><form class="form-wrap" data-form="memory"><div class="form-row"><label>回忆标题<input class="love-input" name="title" maxlength="100" placeholder="第一次一起散步" required></label><label>发生日期<input type="date" class="love-input" name="event_date"></label></div><label class="file-label">选择照片（可选，JPEG / PNG / WEBP，≤5MB）<input name="photo" type="file" accept="image/jpeg,image/png,image/webp"></label><textarea class="love-textarea" name="body" maxlength="500" placeholder="那天发生了什么可爱的小事？"></textarea><button type="submit" class="tinybtn hot">珍藏回忆 📮</button></form><div class="photo-grid" id="photo-list"></div><div class="entries" id="memory-list" style="margin-top:12px"></div></div></section>
+    <section class="love-section" id="love-anniversaries"><div class="love-card"><div class="section-heading"><div><h2>🎂 纪念日收藏</h2><p>每一个重要日子，都不允许偷偷溜走。</p></div></div><form class="form-wrap" data-form="anniversary"><div class="form-row"><label>纪念日名称<input class="love-input" name="title" maxlength="100" placeholder="我们在一起啦" required></label><label>日期<input class="love-input" name="event_date" type="date" required></label></div><button class="tinybtn hot" type="submit">标记心动日期 ♡</button></form><div class="entries" id="anniversary-list" style="margin-top:12px"></div></div></section>
+    <section class="love-section" id="love-capsules"><div class="love-card"><div class="section-heading"><div><h2>💌 未来时光胶囊</h2><p>写给未来的我们，在约定的日期打开。</p></div></div><form class="form-wrap" data-form="capsule"><div class="form-row"><label>胶囊标题<input class="love-input" name="title" maxlength="100" placeholder="一年后的我们" required></label><label>约定开启日<input class="love-input" name="target_date" type="date" required></label></div><textarea class="love-textarea" name="body" maxlength="2000" placeholder="给未来写一封悄悄话…" required></textarea><button type="submit" class="tinybtn hot">封存这份心意 📮</button></form><p class="form-caption">🔐 到期前界面隐藏正文；这是浪漫倒计时，不是加密保密箱。</p><div class="entries" id="capsule-list" style="margin-top:12px"></div></div></section>
+    <section class="love-section" id="love-coupons"><div class="love-card"><div class="section-heading"><div><h2>🎟️ 恋爱特权兑换券</h2><p>创造一份可以向对方兑换的浪漫。</p></div></div><form class="love-form" data-form="coupon"><input class="love-input" name="title" maxlength="120" placeholder="一张无条件抱抱券" required><button type="submit" class="tinybtn hot">制作兑换券 ✨</button></form><div class="entries" id="coupon-list"></div></div></section>
+  </div>
+
+  <div class="jingle">⋆ ˚｡ ⋆ <span>♡</span> 每一天，都值得被温柔收藏 <span>♡</span> ⋆ ˚｡ ⋆</div>
+  <footer class="page-footer">节日与节气以中国大陆常用日历为主，另收录万圣夜、感恩节、圣诞节等文化节日。2026 年国庆假期 10 月 1—7 日，10 月 10 日调休上班；2027 年具体放假调休安排请以官方公告为准。<br>日期点击后可以保存笔记（本地模式保存在当前浏览器，配对云端模式共享）。支持打印为纸质日历。启用云端配对后，专属内容实时同步；离线体验内容仅保存本机。
+    <div class="sources">日期参考：<a href="https://www.beijing.gov.cn/cs/gncs/zcwj/202603/t20260327_4568275.html" target="_blank" rel="noopener noreferrer">国务院办公厅 2026 年放假安排</a> · <a href="https://www.timecha.com/jieqi/" target="_blank" rel="noopener noreferrer">节气日历</a> · <a href="https://routetochina.com/zh/guide/calendar/" target="_blank" rel="noopener noreferrer">中国日历对照</a></div>
+  </footer>
+</div>
+<div class="dialog-cover" id="dialog-cover" role="presentation">
+  <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="close" type="button" id="close-dialog" aria-label="关闭弹窗">×</button>
+    <span class="modal-emoji" id="modal-emoji" aria-hidden="true">🐾</span>
+    <div class="modal-date" id="modal-date"></div>
+    <h2 class="modal-title" id="modal-title"></h2>
+    <p class="modal-description" id="modal-description"></p>
+    <div class="wish-wrap">
+      <label for="wish-input">💌 写给这一天的悄悄话</label>
+      <textarea id="wish-input" maxlength="500" placeholder="今天想做什么？有什么值得开心的小事呢？"></textarea>
+      <button type="button" class="write-btn" id="save-wish">收藏我的小心愿 ♡</button>
+    </div><div class="day-extra" id="day-extra"></div>
+  </div>
+</div>
+
+<div class="love-modal" id="account-modal" role="presentation"><div class="love-modal-panel" role="dialog" aria-modal="true" aria-labelledby="account-title"><button type="button" class="close-modal" id="close-account" aria-label="关闭">×</button><h2 id="account-title">☁️ 两个人的云端小屋</h2><p>两部手机或电脑分别登录自己的账号，输入同一个配对邀请码，就能实时同步恋爱记录。</p><div id="account-status"></div><div id="account-forms"></div><div class="account-msg" id="account-message" role="status"></div><p class="secret-note">🔒 邀请码请仅分享给另一半。云端功能需要先配置 Supabase；不要把 Supabase 私钥填到网页里。</p></div></div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="./config.js"></script>
+<script>
+(function(){
+'use strict';
+// 情侣空间状态；本地和云端使用相同的数据展示层。
+let allEntries=[];let cloudClient=null;let authUser=null;let couple=null;let coupleMembers=[];let coupleChannel=null;let reloadTimer=null;let pollTimer=null;let chosenMood='🥰';let photoUrls={};
+const demoUserId=localStorage.getItem('meowlove:device-id')||('demo-'+Math.random().toString(36).slice(2));
+localStorage.setItem('meowlove:device-id',demoUserId);
+const cloudConfig=window.MEOW_SUPABASE||{};
+const byId=id=>document.getElementById(id);
+const isCloud=()=>Boolean(cloudClient&&authUser&&couple);
+const myId=()=>isCloud()?authUser.id:demoUserId;
+const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const isoToday=()=>{let d=new Date();return key(d.getFullYear(),d.getMonth()+1,d.getDate())};
+const uid=()=>globalThis.crypto?.randomUUID?.()||('id-'+Date.now()+'-'+Math.random().toString(36).slice(2));
+
+const months=[
+ {year:2026,month:10,en:'OCTOBER',name:'糖霜桂花月',motto:'在秋天里，捡一片',bold:'粉色的浪漫',cat:'🍁',catColor:'#fff8f3',accent:'#e996ae',tint:'#ffe8ee',foot:'#fff3f5',footer:'🍬 桂花香香 · 甜甜秋日',footerRight:'喵呜～慢慢来'},
+ {year:2026,month:11,en:'NOVEMBER',name:'奶油暖秋月',motto:'把日子过得',bold:'软绵绵、暖呼呼',cat:'🎀',catColor:'#fff7ee',accent:'#ba9ad4',tint:'#f5eaff',foot:'#faf5ff',footer:'🧸 给疲惫的小心灵放个假',footerRight:'抱抱自己 ♡'},
+ {year:2026,month:12,en:'DECEMBER',name:'草莓雪花月',motto:'一起等待',bold:'飘落的第一片雪',cat:'❄️',catColor:'#f9fdff',accent:'#d49cb8',tint:'#f4e8f7',foot:'#fbf3fb',footer:'🎄 平安、惊喜与热可可',footerRight:'冬天也闪闪发光'},
+ {year:2027,month:1,en:'JANUARY',name:'樱花新愿月',motto:'新的一年也要',bold:'被幸福包围',cat:'🧣',catColor:'#fffaf8',accent:'#ed9ebd',tint:'#ffe7f0',foot:'#fff3f8',footer:'🎊 新的故事，从猫咪开始',footerRight:'新年快乐呀 ♡'}
+];
+const events={
+ '2026-10-01':{name:'国庆节',icon:'🇨🇳',anim:'flag',desc:'今天是中华人民共和国国庆节！挥挥小红旗，祝愿山河锦绣、万家团圆。2026 年国庆假期为 10 月 1—7 日。'},
+ '2026-10-08':{name:'寒露',icon:'💧',anim:'drop',desc:'露水带上凉意，秋天渐深。猫咪提醒：早晚出门记得加一件外套哦。'},
+ '2026-10-18':{name:'重阳节',icon:'🌼',anim:'flower',desc:'农历九月初九重阳节，有登高赏秋、赏菊、敬老的习俗。记得关心长辈，送去暖暖的问候。'},
+ '2026-10-23':{name:'霜降',icon:'🍂',anim:'leaf',desc:'秋天的最后一个节气，落叶轻轻旋转。天气渐凉，适合热茶、围巾和早睡。'},
+ '2026-10-31':{name:'万圣夜',icon:'🎃',anim:'pumpkin',desc:'南瓜灯晃呀晃，糖果在口袋里叮叮当当。万圣夜是部分国家和地区流行的文化节日，并非中国法定假日。'},
+ '2026-11-07':{name:'立冬',icon:'🧣',anim:'mitten',desc:'冬天来报到啦。围上软软的围巾，和猫咪一起把生活过得热气腾腾。'},
+ '2026-11-11':{name:'双十一',icon:'🛍️',anim:'bag',desc:'双十一购物节，购物袋开心跳跳！买喜欢的，也记得先想想是不是真的需要。'},
+ '2026-11-22':{name:'小雪',icon:'❄️',anim:'snow',desc:'小雪节气，寒意渐浓。不代表这一天一定会下雪，却很适合给日子添一点温柔。'},
+ '2026-11-26':{name:'感恩节',icon:'🦃',anim:'turkey',desc:'2026 年美国感恩节是 11 月 26 日（11 月第四个星期四）。向值得感谢的人说一声谢谢吧。'},
+ '2026-12-07':{name:'大雪',icon:'☃️',anim:'snowman',desc:'大雪节气到啦！给雪人系上粉色围巾，愿这个冬天有热饮和好消息。'},
+ '2026-12-22':{name:'冬至',icon:'🥟',anim:'dumpling',desc:'冬至，白昼从此渐渐变长。北方常吃饺子，南方一些地区吃汤圆，团团圆圆最开心。'},
+ '2026-12-24':{name:'平安夜',icon:'🍎',anim:'apple',desc:'平安夜，送出一颗温柔的心。平安果是中国部分地区流行的节日趣味习俗。'},
+ '2026-12-25':{name:'圣诞节',icon:'🎄',anim:'tree',desc:'叮叮当，圣诞树亮起来啦！愿你收到意料之外的小惊喜，也拥有甜甜的平常心。'},
+ '2026-12-31':{name:'跨年夜',icon:'✨',anim:'sparkle',desc:'倒数迎新！和旧的一年拥抱告别，把想实现的小心愿装进下一年的口袋。'},
+ '2027-01-01':{name:'元旦',icon:'🎆',anim:'firework',desc:'2027 年的第一天，Happy New Year！这是法定节日；具体连休与调休情况请关注官方安排。'},
+ '2027-01-05':{name:'小寒',icon:'🧤',anim:'mitten',desc:'小寒节气，寒冷更浓。双手放进暖暖的手套里，给自己多一点照顾。'},
+ '2027-01-15':{name:'腊八节',icon:'🥣',anim:'bowl',desc:'农历腊月初八。喝一碗香甜腊八粥，浓浓的年味正在悄悄靠近。'},
+ '2027-01-20':{name:'大寒',icon:'❄️',anim:'snow',desc:'二十四节气中的最后一站，寒意到深处，春天也快来了。猫咪送你热乎乎的祝福！'},
+ '2027-01-30':{name:'小年',icon:'🍬',anim:'candy',desc:'农历腊月廿三，北方传统小年，有祭灶、扫尘、吃灶糖等习俗。南方部分地区在腊月廿四过小年。'}
+};
+const holidayRest=new Set(['2026-10-01','2026-10-02','2026-10-03','2026-10-04','2026-10-05','2026-10-06','2026-10-07']);
+const workdays=new Set(['2026-10-10']);
+const board=document.querySelector('#calendar-board');
+const modal=document.querySelector('#dialog-cover');
+const noteField=document.querySelector('#wish-input');
+const motionButton=document.querySelector('#toggle-motion');
+let currentKey=null;let lastFocus=null;let toastTimer=null;
+function key(y,m,d){return `${y}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`}
+function noteFor(k){if(isCloud())return allEntries.find(e=>e.kind==='daynote'&&e.event_date===k)?.body||'';try{return localStorage.getItem('kitty-calendar:'+k)||''}catch(err){return ''}}
+async function saveNote(k,v){if(isCloud()){const prev=allEntries.find(e=>e.kind==='daynote'&&e.event_date===k);if(prev){if(v.trim())return await modifyEntry(prev.id,{body:v.trim()});return await deleteEntry(prev.id)}if(v.trim())return await addEntry('daynote',{event_date:k,body:v.trim(),title:'日历小心愿'});return true}try{if(v.trim())localStorage.setItem('kitty-calendar:'+k,v.trim());else localStorage.removeItem('kitty-calendar:'+k);return true}catch(err){return false}}
+function catSvg(){return `<svg class="mini-cat" viewBox="0 0 100 100" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path class="ears" d="M16 43 20 9 41 28M84 43 78 9 59 28"/><ellipse class="face" cx="50" cy="54" rx="43" ry="39"/><path d="m22 36 4-17 13 12m40 5-4-17-13 12" fill="#ffc8d6"/><path d="M30 52q6-7 12 0m17 0q7-7 13 0" fill="none" stroke="#967084" stroke-width="3" stroke-linecap="round"/><ellipse class="cheek" cx="25" cy="63" rx="8" ry="5"/><ellipse class="cheek" cx="74" cy="63" rx="8" ry="5"/><path d="m47 60 4-3 4 3-4 3Z" fill="#c88aab"/><path d="M51 63q-6 8-11 1m11-1q6 8 11 1M20 58 5 56m16 9L5 69m75-11 15-2m-15 9 15 4" fill="none" stroke="#967084" stroke-width="1.8" stroke-linecap="round"/></svg>`}
+function createMonth(meta){
+ const section=document.createElement('article');section.className='month';section.id=`month-${meta.year}-${meta.month}`;section.style.setProperty('--accent',meta.accent);section.style.setProperty('--tint',meta.tint);section.style.setProperty('--foot-bg',meta.foot);section.style.setProperty('--cat-color',meta.catColor);
+ const count=Object.keys(events).filter(k=>k.startsWith(key(meta.year,meta.month,1).slice(0,7))).length;
+ section.innerHTML=`<div class="month-top"><div class="month-title"><div class="month-number">${String(meta.month).padStart(2,'0')}</div><div class="month-info"><div class="en">${meta.en}</div><div class="cn">${meta.name}</div><div class="year">${meta.year} 年 · ${meta.month} 月</div></div></div><div class="month-character">${catSvg()}<span class="mini-accessory" aria-hidden="true">${meta.cat}</span></div></div><div class="month-motto">${meta.motto} <strong>${meta.bold}</strong> ♡</div><div class="weekdays">${['一','二','三','四','五','六','日'].map(w=>`<div class="weekday">${w}</div>`).join('')}</div><div class="days" role="group" aria-label="${meta.year}年${meta.month}月日历"></div><div class="month-footer"><span>${meta.footer}</span><span>${count} 个节日彩蛋 ✦</span></div>`;
+ const grid=section.querySelector('.days');
+ const firstMondayIndex=(new Date(meta.year,meta.month-1,1).getDay()+6)%7;
+ const daysInMonth=new Date(meta.year,meta.month,0).getDate();
+ const prevMonthDays=new Date(meta.year,meta.month-1,0).getDate();
+ const today=new Date();
+ for(let index=0;index<42;index++){
+   const dayNumber=index-firstMondayIndex+1;
+   const inside=dayNumber>=1&&dayNumber<=daysInMonth;
+   const dateNumber=inside?dayNumber:dayNumber<1?prevMonthDays+dayNumber:dayNumber-daysInMonth;
+   const k=inside?key(meta.year,meta.month,dayNumber):'';
+   const event=inside?events[k]:null;
+   const rest=holidayRest.has(k),work=workdays.has(k);
+   const weekend=index%7>=5;
+   const isToday=inside&&meta.year===today.getFullYear()&&meta.month===today.getMonth()+1&&dayNumber===today.getDate();
+   const el=document.createElement('button');el.type='button';el.className=['day',!inside?'outside':'',weekend?'weekend':'',event?'festival':'',rest?'rest':'',work?'workday':'',isToday?'today':''].filter(Boolean).join(' ');
+   el.setAttribute('aria-label',inside?`${meta.year}年${meta.month}月${dayNumber}日${event?'，'+event.name:''}${rest?'，国庆假期':''}${work?'，调休上班':''}`:`其他月份${dateNumber}日`);
+   if(!inside){el.disabled=true;el.setAttribute('aria-hidden','true');el.tabIndex=-1}
+   let inner=`<span class="date">${dateNumber}</span>`;
+   if(rest||work)inner+=`<span class="tag ${work?'work':''}">${work?'班':'休'}</span>`;
+   if(event)inner+=`<span class="festival-sticker sticker-${event.anim}" aria-hidden="true">${event.icon}</span><span class="day-label">${event.name}</span>`;
+   else if(rest)inner+='<span class="rest-label">假期中 ♡</span>';
+   else if(work)inner+='<span class="work-label">调休上班</span>';
+   if(inside&&noteFor(k))inner+='<span class="note-dot" aria-hidden="true"></span>';if(inside&&dayNumber===14){inner+='<span class="love-mark" title="每月恋爱小仪式">♥</span>';el.classList.add('romance-day')}
+   el.innerHTML=inner;
+   if(inside){el.dataset.key=k;el.addEventListener('click',()=>openDate(k,el))}
+   grid.appendChild(el);
+ }
+ return section
+}
+months.forEach(m=>board.appendChild(createMonth(m)));
+function openDate(k,button){currentKey=k;lastFocus=button;const event=events[k];const parts=k.split('-').map(Number);const weekday=['星期日','星期一','星期二','星期三','星期四','星期五','星期六'][new Date(parts[0],parts[1]-1,parts[2]).getDay()];document.querySelector('#modal-emoji').textContent=event?event.icon:'🐾';document.querySelector('#modal-date').textContent=`${parts[0]} 年 ${parts[1]} 月 ${parts[2]} 日 · ${weekday}`;document.querySelector('#modal-title').textContent=event?event.name:'普通又珍贵的一天';let desc=event?event.desc:'小小的日子，也值得认真收藏。今天发生了什么可爱的小事呢？';if(holidayRest.has(k)&&!event)desc='国庆小长假进行中！可以睡个懒觉、晒晒太阳，或者和喜欢的人一起散散步。';if(workdays.has(k))desc='今天是 2026 年国庆节假期的调休上班日。给自己准备一份香香的小零食，加油呀！';document.querySelector('#modal-description').textContent=desc;noteField.value=noteFor(k);byId('day-extra').innerHTML=dayExtraHtml(k);modal.classList.add('visible');document.body.style.overflow='hidden';document.querySelector('#close-dialog').focus();if(event)confetti(button)}
+function closeModal(){modal.classList.remove('visible');document.body.style.overflow='';currentKey=null;if(lastFocus)lastFocus.focus()}
+document.querySelector('#close-dialog').addEventListener('click',closeModal);
+modal.addEventListener('click',event=>{if(event.target===modal)closeModal()});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&modal.classList.contains('visible'))closeModal()});
+function toast(message){const el=document.querySelector('#toast');el.textContent=message;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),2500)}
+document.querySelector('#save-wish').addEventListener('click',async()=>{if(!currentKey)return;let good=false;try{good=await saveNote(currentKey,noteField.value)}catch(err){toast('保存失败：'+err.message);return}if(!good){toast('存储未开放，试试允许浏览器保存网站数据');return}const cell=document.querySelector(`[data-key="${currentKey}"]`);if(cell){const dot=cell.querySelector('.note-dot');if(noteField.value.trim()&&!dot){const n=document.createElement('span');n.className='note-dot';cell.appendChild(n)}else if(!noteField.value.trim()&&dot)dot.remove()}toast(noteField.value.trim()?'💗 小心愿已经收藏啦！':'🧽 已清空这天的小心愿');closeModal()});
+motionButton.addEventListener('click',()=>{const disabled=document.body.classList.toggle('motion-off');motionButton.textContent=disabled?'🌙 动画已暂停':'✨ 动画开启';motionButton.setAttribute('aria-pressed',String(disabled));toast(disabled?'小动画休息一下 💤':'节日小精灵又开始跳舞啦 ✨')});
+document.querySelector('#jump-today').addEventListener('click',()=>{const now=new Date();const card=document.querySelector(`#month-${now.getFullYear()}-${now.getMonth()+1}`);if(!card){toast('今天不在这四个月里哦，先收藏未来的好日子吧 ♡');return}card.scrollIntoView({behavior:document.body.classList.contains('motion-off')?'instant':'smooth',block:'center'});const c=card.querySelector('.today');if(c)setTimeout(()=>c.focus({preventScroll:true}),420)});
+function confetti(button){if(document.body.classList.contains('motion-off')||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;const box=button.getBoundingClientRect();const centerX=box.left+box.width/2,centerY=box.top+box.height/2;const symbols=['♡','✦','⋆','✿'];for(let i=0;i<10;i++){const span=document.createElement('span');span.className='confetti';span.textContent=symbols[i%symbols.length];span.style.left=centerX+'px';span.style.top=centerY+'px';const angle=(Math.PI*2*i/10);const dist=55+(i%3)*17;span.style.setProperty('--dx',Math.cos(angle)*dist+'px');span.style.setProperty('--dy',Math.sin(angle)*dist+'px');span.style.setProperty('--rot',`${i*48-180}deg`);span.style.color=i%2?'#efa7c4':'#bf9ed2';document.body.appendChild(span);setTimeout(()=>span.remove(),1050)}}
+
+/* ======= 双人互动功能 ======= */
+const demoKey='meowlove:demo:entries-v2';
+const inspiration=['一起去看日落 🌇','找一家安静的猫咖 🐈','做一顿双人烛光晚餐 🕯️','在家看一部老电影 🍿','一起去植物园拍照 🌿','穿同色系衣服散步 🎀','周末去郊外野餐 🧺','在书店给对方挑一本书 📚','挑战做一份草莓蛋糕 🍰','坐一趟没有目的地的公交 🚌','交换写给对方的情书 💌','去看海边的日出 🌅'];
+const itemKinds=['daynote','dateplan','wish','memory','anniversary','capsule','coupon','mood','game'];
+const sharedKind=(k)=>allEntries.filter(e=>e.kind===k).sort((a,b)=>(a.created_at||'').localeCompare(b.created_at||''));
+const friendlyDay=d=>d?d.replace(/-/g,'.'):'';
+const friendlyTime=d=>d?new Date(d).toLocaleString('zh-CN',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'}):'';
+const markDone=e=>e.status==='done';
+function empty(label='这里暂时空空的，来写下第一份心动吧 ฅ^•ﻌ•^ฅ'){return `<div class="empty">🐾 ${safe(label)}</div>`}
+function simpleEntry(e,icon='💗',extra='',buttons=''){
+  return `<div class="entry ${markDone(e)?'done':''}"><span class="ico">${icon}</span><div class="content"><div class="title">${safe(e.title||e.body||'小小心意')}</div>${e.title&&e.body?`<div class="desc">${safe(e.body)}</div>`:''}<div class="meta">${e.event_date?'📆 '+safe(friendlyDay(e.event_date))+' · ':''}${safe(who(e))} · ${safe(friendlyTime(e.created_at))}${extra?' · '+safe(extra):''}</div></div><div class="tools">${buttons}<button class="icon-btn" type="button" data-delete="${safe(e.id)}" title="删除" aria-label="删除这条内容">×</button></div></div>`;
+}
+function who(e){if(!isCloud())return '本机记录';const m=coupleMembers.find(m=>m.user_id===e.author_id);return m?.display_name||((e.author_id===authUser.id)?'我':'另一半')}
+function announce(msg){toast(msg)}
+function demoLoad(){try{return JSON.parse(localStorage.getItem(demoKey)||'[]')}catch{return []}}
+function demoSave(){try{localStorage.setItem(demoKey,JSON.stringify(allEntries));return true}catch{announce('本地存储已满，尝试减少图片或记录');return false}}
+async function addEntry(kind,fields={}){
+  if(!itemKinds.includes(kind))throw Error('不支持的记录类型');
+  const data={kind,title:fields.title||'',body:fields.body||'',event_date:fields.event_date||null,target_date:fields.target_date||null,status:fields.status||'open',emoji:fields.emoji||'',meta:fields.meta||{}};
+  if(isCloud()){
+    const {data:row,error}=await cloudClient.from('love_entries').insert({...data,couple_id:couple.id,author_id:authUser.id}).select().single();
+    if(error)throw error;allEntries.push(row);
+  }else{allEntries.push({...data,id:uid(),couple_id:'demo',author_id:demoUserId,created_at:new Date().toISOString(),updated_at:new Date().toISOString()});if(!demoSave()){allEntries.pop();throw Error('本地存储空间不足，请减少图片或记录')} }
+  renderAll();return true;
+}
+async function modifyEntry(id,changes){
+  const item=allEntries.find(x=>x.id===id);if(!item)return false;
+  const allowed={};for(const k of ['title','body','event_date','target_date','status','emoji','meta'])if(Object.prototype.hasOwnProperty.call(changes,k))allowed[k]=changes[k];
+  if(isCloud()){
+    const {error}=await cloudClient.from('love_entries').update(allowed).eq('id',id).eq('couple_id',couple.id);
+    if(error)throw error;
+  }
+  Object.assign(item,allowed,{updated_at:new Date().toISOString()});if(!isCloud())demoSave();renderAll();return true;
+}
+async function deleteEntry(id){
+  const e=allEntries.find(x=>x.id===id);if(!e)return false;
+  if(isCloud()){
+    const {error}=await cloudClient.from('love_entries').delete().eq('id',id).eq('couple_id',couple.id);
+    if(error)throw error;
+    if(e.kind==='memory'&&e.meta?.image_path)await cloudClient.storage.from('couple-photos').remove([e.meta.image_path]).catch(()=>{});
+  }
+  allEntries=allEntries.filter(e=>e.id!==id);if(!isCloud())demoSave();renderAll();return true;
+}
+async function loadEntries(){
+  if(isCloud()){
+    const {data,error}=await cloudClient.from('love_entries').select('*').eq('couple_id',couple.id).order('created_at',{ascending:true}).limit(2000);
+    if(error){announce('云端读取失败：'+error.message);return}
+    allEntries=data||[];
+  }else allEntries=demoLoad();
+  renderAll();if(isCloud())await loadSignedPhotos();
+}
+async function loadSignedPhotos(){
+  if(!isCloud())return;let changed=false;
+  for(const e of sharedKind('memory')){
+    const path=e.meta?.image_path;if(!path||photoUrls[path]?.expire>Date.now()+30*60*1000)continue;
+    const {data,error}=await cloudClient.storage.from('couple-photos').createSignedUrl(path,3600);
+    if(!error&&data?.signedUrl){photoUrls[path]={url:data.signedUrl,expire:Date.now()+3600*1000};changed=true}
+  }
+  if(changed)renderMemories();
+}
+function renderStatus(){
+  const badge=byId('sync-light');badge.classList.toggle('online',isCloud());
+  if(isCloud()){
+    byId('sync-text').textContent='云端双人空间 · '+coupleMembers.length+'/2 人已配对';
+    byId('couple-subtitle').textContent='💌 '+coupleMembers.map(m=>m.display_name).join(' × ')+' · 数据仅在这个情侣空间同步';
+    byId('open-cloud').textContent='⚙️ 情侣空间设置';byId('copy-invite').hidden=false;
+  }else{
+    byId('sync-text').textContent=authUser?'已登录 · 尚未创建或加入情侣空间':'本地体验模式 · 尚未联网同步';
+    byId('couple-subtitle').textContent=authUser?'创建小屋或输入另一半的邀请码，即可开启云端同步':'先体验所有功能，连接云端后才可跨设备同步 ♡';
+    byId('open-cloud').textContent=authUser?'💞 完成情侣配对':'☁️ 开启双人同步';byId('copy-invite').hidden=true;
+  }
+}
+function anniversaryStart(){const items=sharedKind('anniversary');return items.slice().reverse().find(e=>e.meta?.start===true)||items.slice().reverse().find(e=>/在一起|恋爱开始|相恋/.test(e.title||''))||null}
+function daysDiff(d1,d2){const a=new Date(d1+'T12:00:00');const b=new Date(d2+'T12:00:00');return Math.round((b-a)/86400000)}
+function calcUpcoming(date){if(!date)return null;let p=date.split('-').map(Number),y=new Date().getFullYear(),today=isoToday();let x=key(y,p[1],Math.min(p[2],new Date(y,p[1],0).getDate()));if(x<today)x=key(y+1,p[1],Math.min(p[2],new Date(y+1,p[1],0).getDate()));return {date:x,days:daysDiff(today,x)}}
+function renderOverview(){
+  const start=anniversaryStart();const today=isoToday();
+  const days=start?daysDiff(start.event_date,today)+1:null;const milestone=days&&days>0?[50,100,131,200,300,365,400,500,520,666,730,999,1000,1314,1500,2000].find(x=>x>=days):null;
+  byId('love-days').textContent=days!=null&&days>0?String(days)+' 天':'—';
+  const upcoming=sharedKind('anniversary').filter(x=>x.event_date).map(e=>({e,v:calcUpcoming(e.event_date)})).filter(x=>x.v).sort((a,b)=>a.v.days-b.v.days)[0];
+  byId('next-anniversary').textContent=upcoming?upcoming.v.days+' 天':'—';
+  byId('anniversary-hint').textContent=upcoming?`${upcoming.e.title} · ${friendlyDay(upcoming.v.date)}`:'先添加一个纪念日 ♡';
+  byId('game-count').textContent=[currentGame('truth'),currentGame('monopoly')].filter(Boolean).length+' / 2';
+  byId('today-date-label').textContent=new Date().toLocaleDateString('zh-CN',{year:'numeric',month:'long',day:'numeric',weekday:'long'});
+  byId('today-strip').innerHTML=`🎀 今天也要对喜欢的人好一点。${start?`我们从 <b>${safe(friendlyDay(start.event_date))}</b> 开始写故事 ♡`:'还没有设置恋爱起始日。可以在「纪念日收藏」里添加「我们在一起啦」，甜蜜天数就会自动开始计数 ♡'} ${isCloud()?'☁️ 当前是双人云端同步模式。':'📍 现在是本机体验模式，登录配对后才会在两台设备上实时共享。'}`+(milestone?`<br>✨ 下一个心动里程碑：在一起 <b>${milestone}</b> 天，还有 <b>${milestone-days}</b> 天！`:'');
+}
+function renderMoods(){
+  const today=isoToday(),todays=sharedKind('mood').filter(x=>x.event_date===today);
+  const mine=todays.find(x=>x.author_id===myId());if(mine){chosenMood=mine.emoji||chosenMood}
+  byId('mood-choices').querySelectorAll('[data-mood]').forEach(b=>{b.classList.toggle('active',b.dataset.mood===chosenMood);b.setAttribute('aria-pressed',String(b.dataset.mood===chosenMood))});
+  const individuals=isCloud()?coupleMembers:[{user_id:demoUserId,display_name:'本机小猫'},{user_id:'partner',display_name:'另一半（待配对）'}];
+  byId('mood-today').innerHTML=`<div class="two-moods">${individuals.map(m=>{const x=todays.find(e=>e.author_id===m.user_id);return `<div class="mood-person"><b>${safe(m.display_name)}</b><div class="face">${safe(x?.emoji||'🌙')}</div><span>${x?safe(x.body||'今天也在认真生活'):'今天还没打卡'}</span></div>`}).join('')}</div>`;
+}
+function renderDates(){const rows=sharedKind('dateplan').sort((a,b)=>(a.event_date||'9999').localeCompare(b.event_date||'9999'));byId('date-list').innerHTML=rows.length?rows.map(e=>simpleEntry(e,'🎡','',`<button class="icon-btn" data-toggle="${safe(e.id)}" type="button">${markDone(e)?'↩':'✓'}</button>`)).join(''):empty('来安排我们的第一次小约会 ♡')}
+function renderWishes(){const rows=sharedKind('wish').sort((a,b)=>Number(markDone(a))-Number(markDone(b)));byId('wish-list').innerHTML=rows.length?rows.map(e=>simpleEntry(e,'🌟','',`<button class="icon-btn" data-toggle="${safe(e.id)}" type="button">${markDone(e)?'↩':'✓'}</button>`)).join(''):empty('把愿望写下来，总有一天会实现 ✨')}
+function renderMemories(){const rows=sharedKind('memory');const photos=rows.filter(e=>e.meta?.image_path||e.meta?.local_url);byId('photo-list').innerHTML=photos.map(e=>{const src=e.meta?.local_url||(photoUrls[e.meta?.image_path]?.url||'');return `<div class="photo-item">${src?`<img src="${safe(src)}" loading="lazy" alt="${safe(e.title||'恋爱回忆')}" referrerpolicy="no-referrer">`:'<div class="empty">📸 照片读取中…</div>'}<div class="caption">${safe(e.title)}<button type="button" class="icon-btn" data-delete="${safe(e.id)}" title="删除照片">×</button></div></div>`}).join('');byId('memory-list').innerHTML=rows.length?rows.map(e=>simpleEntry(e,'📷')).join(''):empty('上传第一张我们的合照吧 ♡')}
+function renderAnniversaries(){let rows=sharedKind('anniversary').sort((a,b)=>(a.event_date||'').localeCompare(b.event_date||''));byId('anniversary-list').innerHTML=rows.length?rows.map(e=>simpleEntry(e,e.meta?.start?'💕':'🎂',e.meta?.start?'恋爱起始日':(calcUpcoming(e.event_date)?.days??'')+' 天后重逢',e.meta?.start?'':`<button class="icon-btn" data-set-start="${safe(e.id)}" title="设为恋爱起始日">💕</button>`)).join(''):empty('添加「我们在一起啦」作为第一个纪念日，就会启动恋爱计时 ♡')}
+function renderCapsules(){const rows=sharedKind('capsule').reverse();byId('capsule-list').innerHTML=rows.length?rows.map(e=>{const locked=Boolean(e.target_date&&e.target_date>isoToday());return `<div class="entry"><div class="ico">${locked?'🔒':'💌'}</div><div class="content"><div class="title">${safe(e.title)}</div><div class="meta">${locked?'约定在 '+safe(friendlyDay(e.target_date))+' 解锁':'已到开启日 · '+safe(friendlyDay(e.target_date))}</div><div class="desc">${locked?'<div class="capsule-locked">🎀 文字在时间到来前先藏起来，期待未来一起打开 ♡</div>':safe(e.body)}</div></div><button class="icon-btn" data-delete="${safe(e.id)}" title="删除胶囊">×</button></div>`}).join(''):empty('给未来的我们写封信吧 ✉️')}
+function renderCoupons(){const rows=sharedKind('coupon').reverse();byId('coupon-list').innerHTML=rows.length?rows.map(e=>`<div class="coupon ${markDone(e)?'done':''}"><span class="ticket">🎟️</span><div class="content" style="flex:1"><b class="title">${safe(e.title)}</b><div class="meta">${markDone(e)?'已兑换 💗':'尚未兑换 · '+safe(who(e))+' 制作'}</div></div><button class="icon-btn" data-toggle="${safe(e.id)}" title="切换兑换状态">${markDone(e)?'↩':'兑换'}</button><button class="icon-btn" data-delete="${safe(e.id)}">×</button></div>`).join(''):empty('制作第一张抱抱兑换券吧')}
+function refreshCalendarMarkers(){document.querySelectorAll('.day[data-key]').forEach(el=>{const k=el.dataset.key;const todayRecord=allEntries.some(x=>x.event_date===k&&itemKinds.includes(x.kind)&&x.kind!=='game'&&x.kind!=='daynote');el.classList.toggle('has-love',todayRecord);const existing=el.querySelector('.note-dot');if(noteFor(k)&&!existing){const dot=document.createElement('span');dot.className='note-dot';el.appendChild(dot)}else if(!noteFor(k)&&existing)existing.remove()})}
+function dayExtraHtml(k){const xs=allEntries.filter(e=>e.event_date===k&&itemKinds.includes(e.kind)&&e.kind!=='daynote'&&e.kind!=='game');let out=`<b>💕 今日情侣小记录</b><br>${xs.length?xs.map(e=>`<div style="padding:4px 0">${safe(e.title||e.body||e.kind)} · ${safe(who(e))}</div>`).join(''):'这天还没有专属记录，可以去约会计划和纪念日添加哦。'}`;if(k.slice(8)==='14')out+='<br>💗 每月 14 日是本站的「恋爱小仪式」彩蛋（非官方节日）。';return out}
+function renderAll(){renderStatus();renderOverview();renderMoods();renderDates();renderWishes();renderMemories();renderAnniversaries();renderCapsules();renderCoupons();renderGames();refreshCalendarMarkers()}
+function fireHearts(x,y){if(document.body.classList.contains('motion-off')||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;for(let i=0;i<13;i++){const e=document.createElement('span');e.className='sprinkle';e.textContent=['💗','💕','✨','🎀','💖'][i%5];e.style.left=x+'px';e.style.top=y+'px';const a=2*Math.PI*i/13;const dist=70+(i%4)*17;e.style.setProperty('--tx',Math.cos(a)*dist+'px');e.style.setProperty('--ty',(Math.sin(a)*dist-45)+'px');document.body.append(e);setTimeout(()=>e.remove(),1450)}}
+async function imageToSmallDataUrl(file){return new Promise((resolve,reject)=>{const reader=new FileReader();reader.onerror=()=>reject(Error('图片读取失败'));reader.onload=()=>{const pic=new Image();pic.onload=()=>{const ratio=Math.min(1,960/Math.max(pic.width,pic.height));const canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(pic.width*ratio));canvas.height=Math.max(1,Math.round(pic.height*ratio));canvas.getContext('2d').drawImage(pic,0,0,canvas.width,canvas.height);resolve(canvas.toDataURL('image/jpeg',.68))};pic.onerror=()=>reject(Error('图片格式无法读取'));pic.src=reader.result};reader.readAsDataURL(file)})}
+async function handleForm(form){const kind=form.dataset.form,fd=new FormData(form);const v=k=>String(fd.get(k)||'').trim();const fields={title:v('title'),body:v('body'),event_date:v('event_date')||null,target_date:v('target_date')||null};
+  const submit=form.querySelector('[type=submit]');if(submit?.disabled)return;submit.disabled=true;
+  try{
+    if(kind==='mood'){const existing=sharedKind('mood').find(e=>e.event_date===isoToday()&&e.author_id===myId());if(existing)await modifyEntry(existing.id,{body:fields.body,emoji:chosenMood});else await addEntry('mood',{...fields,event_date:isoToday(),emoji:chosenMood,title:'今日心情'});announce('打卡成功，TA 可以看到你今天的心情 ♡')}
+    else if(kind==='memory'){
+      const file=fd.get('photo');if(file&&file.size){if(file.size>5*1024*1024)throw Error('图片不可超过 5 MB');if(!['image/jpeg','image/png','image/webp'].includes(file.type))throw Error('仅支持 JPEG / PNG / WEBP');
+        if(isCloud()){
+          const ext=file.type.split('/')[1].replace('jpeg','jpg');const path=`${couple.id}/${authUser.id}/${uid()}.${ext}`;
+          const {error}=await cloudClient.storage.from('couple-photos').upload(path,file,{contentType:file.type,upsert:false,cacheControl:'3600'});
+          if(error)throw error;fields.meta={image_path:path};
+        }else{fields.meta={local_url:await imageToSmallDataUrl(file)}}
+      }
+      await addEntry('memory',fields);if(isCloud())await loadSignedPhotos();announce('照片和回忆已收藏 📷')
+    }else if(kind==='anniversary'){
+      if(!fields.event_date)throw Error('先选好日期');
+      const shouldStart=/在一起|恋爱开始|相恋/.test(fields.title);await addEntry('anniversary',{...fields,meta:{start:shouldStart}});announce('纪念日已经悄悄标记 💗')
+    }else if(kind==='capsule'){
+      if(!fields.target_date)throw Error('请选择开启日期');if(fields.target_date<=isoToday())throw Error('时光胶囊的开启日要在未来哦');await addEntry(kind,fields);announce('写给未来的信已经封存 💌')
+    }else{
+      if(!fields.title&&!fields.body)throw Error('先写一点内容吧');await addEntry(kind,fields);announce('和TA一起收藏成功 💗')
+    }
+    form.reset();
+  }catch(err){announce('操作失败：'+(err.message||String(err)))}finally{submit.disabled=false}
+}
+function modalOpen(){byId('account-modal').classList.add('visible');document.body.style.overflow='hidden';renderAccount();byId('close-account').focus()}
+function modalClose(){byId('account-modal').classList.remove('visible');document.body.style.overflow=''}
+function accountFeedback(message){byId('account-message').textContent=message}
+function renderAccount(){const st=byId('account-status'),forms=byId('account-forms');
+  if(!cloudConfig.url||!cloudConfig.publishableKey){st.innerHTML='<div class="secret-note">🧁 现在处于可直接体验的本地模式。想两台设备同步，请按照压缩包内的 README 配置 Supabase URL / Publishable key，部署到 HTTPS 网站后各自注册账号。</div>';forms.innerHTML='<p>♡ 没有云端配置也能体验日历、留言、宠物、愿望、照片等全部界面功能；数据只在当前浏览器里。</p>';return}
+  if(!cloudClient){st.innerHTML='<p>⚠️ 云端客户端尚未加载。请确认网络畅通，或者刷新页面。</p>';forms.innerHTML='';return}
+  if(!authUser){st.innerHTML='<p>🐱 两个人各用自己的邮箱和密码注册，再创建或加入专属情侣空间。</p>';forms.innerHTML=`<form data-auth="login"><label>邮箱<input class="love-input" type="email" name="email" autocomplete="email" required placeholder="you@example.com"></label><label>密码（至少 6 位）<input class="love-input" type="password" name="password" minlength="6" autocomplete="current-password" required placeholder="••••••••"></label><div class="form-row" style="margin-top:14px"><button class="tinybtn hot" type="submit" name="mode" value="login">登录 🐾</button><button class="tinybtn" type="submit" name="mode" value="signup">创建账号 💕</button></div></form>`;return}
+  st.innerHTML=`<p>✅ 已登录：<strong>${safe(authUser.email||'邮箱账号')}</strong>　<button class="tinybtn" id="account-signout" type="button">退出账号</button></p>`;
+  if(isCloud()){
+    forms.innerHTML=`<div class="invite-display" id="invitation-code">${safe(couple.invite_code)}</div><p>把上方配对码发给另一半，让TA在自己设备上登录并选择「加入情侣空间」。</p><p>成员：${coupleMembers.map(m=>safe(m.display_name)).join(' ♡ ')}</p><form data-auth="rename"><label>修改我的昵称<input class="love-input" name="name" maxlength="25" value="${safe(coupleMembers.find(m=>m.user_id===authUser.id)?.display_name||'')}" required></label><button class="tinybtn hot" type="submit">更新昵称 🎀</button></form>`;
+  }else forms.innerHTML=`<div class="form-row" style="margin-top:15px"><form data-auth="create" style="flex:1;min-width:180px"><label>给自己取个昵称<input class="love-input" name="name" maxlength="25" placeholder="草莓小猫" required></label><button class="tinybtn hot" type="submit">💕 创建情侣空间</button></form><form data-auth="join" style="flex:1;min-width:180px"><label>你的昵称<input class="love-input" name="name" maxlength="25" placeholder="奶油小猫" required></label><label>TA 发给你的邀请码<input class="love-input" name="code" maxlength="32" placeholder="16位邀请码" required></label><button class="tinybtn hot" type="submit">💌 加入TA的小屋</button></form></div>`;
+}
+async function handleAuth(form,event){const fd=new FormData(form),action=form.dataset.auth,mode=event?.submitter?.value||'login';const val=k=>String(fd.get(k)||'').trim();const btn=event?.submitter||form.querySelector('button');if(btn)btn.disabled=true;accountFeedback('正在处理…');
+  try{
+    if(action==='login'){
+      const opts={email:val('email'),password:val('password')};const result=mode==='signup'?await cloudClient.auth.signUp(opts):await cloudClient.auth.signInWithPassword(opts);
+      if(result.error)throw result.error;
+      if(mode==='signup'&&!result.data?.session)accountFeedback('📨 注册申请已提交。请先到邮箱完成验证，再返回登录。');
+      else accountFeedback('登录成功，欢迎回来 ♡');
+    }else if(action==='create'||action==='join'){
+      const arg=action==='create'?{p_name:val('name')}:{p_name:val('name'),p_invite_code:val('code')};
+      const {error}=await cloudClient.rpc(action==='create'?'create_love_couple':'join_love_couple',arg);if(error)throw error;
+      await refreshRoom();accountFeedback('两个人的小屋准备好了！🎀');
+    }else if(action==='rename'){
+      const {error}=await cloudClient.from('love_members').update({display_name:val('name')}).eq('user_id',authUser.id);if(error)throw error;
+      await refreshRoom();accountFeedback('新昵称保存成功 ♡');
+    }
+    if(action!=='login')renderAccount();
+  }catch(err){accountFeedback('操作失败：'+(err.message||String(err)))}finally{if(btn)btn.disabled=false}
+}
+async function refreshRoom(){
+  if(!cloudClient||!authUser){couple=null;coupleMembers=[];stopStream();loadEntries();return}
+  const {data:member,error}=await cloudClient.from('love_members').select('couple_id,display_name').eq('user_id',authUser.id).maybeSingle();
+  if(error){announce('获取配对信息失败：'+error.message);return}
+  if(!member){couple=null;coupleMembers=[];stopStream();loadEntries();renderAccount();return}
+  const [r1,r2]=await Promise.all([cloudClient.from('love_couples').select('*').eq('id',member.couple_id).single(),cloudClient.from('love_members').select('couple_id,user_id,display_name,joined_at').eq('couple_id',member.couple_id)]);
+  if(r1.error||r2.error){announce('空间加载失败：'+(r1.error||r2.error).message);return}
+  const previous=couple?.id;couple=r1.data;coupleMembers=r2.data||[];
+  if(previous!==couple.id){stopStream();startStream()}
+  await loadEntries();if(byId('account-modal').classList.contains('visible'))renderAccount();
+}
+let loadingRoom=false;async function reloadRemote(){if(loadingRoom||!isCloud())return;loadingRoom=true;try{
+  const r=await cloudClient.from('love_members').select('couple_id,user_id,display_name,joined_at').eq('couple_id',couple.id);if(!r.error)coupleMembers=r.data||[];
+  await loadEntries();
+}finally{loadingRoom=false}}
+function stopStream(){if(coupleChannel&&cloudClient){cloudClient.removeChannel(coupleChannel);coupleChannel=null}if(pollTimer){clearInterval(pollTimer);pollTimer=null}if(reloadTimer){clearTimeout(reloadTimer);reloadTimer=null}}
+function startStream(){if(!isCloud())return;
+  const requestRefresh=()=>{clearTimeout(reloadTimer);reloadTimer=setTimeout(reloadRemote,350)};
+  coupleChannel=cloudClient.channel('meow-love-'+couple.id,{config:{presence:{key:authUser.id}}})
+    .on('postgres_changes',{event:'*',schema:'public',table:'love_entries',filter:'couple_id=eq.'+couple.id},requestRefresh)
+    .on('postgres_changes',{event:'*',schema:'public',table:'love_members',filter:'couple_id=eq.'+couple.id},requestRefresh)
+    .on('presence',{event:'sync'},()=>{})
+    .subscribe(status=>{if(status==='SUBSCRIBED')coupleChannel?.track({uid:authUser.id,name:coupleMembers.find(x=>x.user_id===authUser.id)?.display_name||'小猫'}).catch(()=>{})});
+  pollTimer=setInterval(()=>{if(!document.hidden)reloadRemote()},30000);
+}
+async function initCloud(){
+  allEntries=demoLoad();renderAll();
+  if(!cloudConfig.url||!cloudConfig.publishableKey){renderStatus();return}
+  if(!globalThis.supabase?.createClient){try{await new Promise((resolve,reject)=>{const tag=document.createElement('script');tag.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2';tag.onload=resolve;tag.onerror=()=>reject(Error('CDN 无法访问'));document.head.appendChild(tag)})}catch(err){announce('加载云端组件失败，请检查网络连接');return}}
+  document.body.classList.add('cloud-mode');
+  try{
+    cloudClient=globalThis.supabase.createClient(cloudConfig.url,cloudConfig.publishableKey,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
+    cloudClient.auth.onAuthStateChange((_event,session)=>{const id=session?.user?.id||null;if(id!==(authUser?.id||null)){authUser=session?.user||null;setTimeout(()=>refreshRoom(),0)}});
+    const {data,error}=await cloudClient.auth.getSession();if(error)throw error;authUser=data.session?.user||null;
+    if(authUser)await refreshRoom();else renderStatus();
+  }catch(err){announce('云端初始化失败：'+err.message)}
+}
+// 导航与页面事件
+byId('open-cloud').addEventListener('click',modalOpen);
+byId('close-account').addEventListener('click',modalClose);
+byId('account-modal').addEventListener('click',e=>{if(e.target===byId('account-modal'))modalClose()});
+byId('copy-invite').addEventListener('click',async()=>{if(!isCloud())return;try{await navigator.clipboard.writeText(couple.invite_code);announce('邀请码复制好了，发给TA吧 💌')}catch{modalOpen();accountFeedback('请从上方长按 / 选中邀请码复制')}});
+byId('date-random').addEventListener('click',()=>{const item=inspiration[Math.floor(Math.random()*inspiration.length)];const input=byId('love-dates').querySelector('[name=title]');input.value=item;input.focus();announce('约会灵感抽到：'+item)});
+byId('mood-choices').addEventListener('click',e=>{const b=e.target.closest('[data-mood]');if(!b)return;chosenMood=b.dataset.mood;renderMoods()});
+document.querySelectorAll('[data-target]').forEach(b=>b.addEventListener('click',()=>{byId(b.dataset.target)?.scrollIntoView({behavior:'smooth',block:'start'})}));
+document.addEventListener('submit',async e=>{
+  const form=e.target.closest('form[data-form],form[data-auth]');if(!form)return;e.preventDefault();if(form.hasAttribute('data-auth'))await handleAuth(form,e);else await handleForm(form)
+});
+document.addEventListener('click',async e=>{
+  const t=e.target.closest('button');if(!t)return;
+  if(t.id==='account-signout'){if(!cloudClient)return;await cloudClient.auth.signOut();authUser=null;couple=null;coupleMembers=[];stopStream();await loadEntries();renderAccount();accountFeedback('已退出，云端记录仍保存在情侣空间');return}
+  if(t.dataset.delete){if(!confirm('确定要删除这条记录吗？同步模式下，两个人都会看不到它。'))return;try{await deleteEntry(t.dataset.delete);announce('已经删除啦 🧹')}catch(err){announce('删除失败：'+err.message)}return}
+  if(t.dataset.setStart){const selected=allEntries.find(x=>x.id===t.dataset.setStart);if(!selected)return;try{for(const x of sharedKind('anniversary').filter(e=>e.meta?.start&&e.id!==selected.id))await modifyEntry(x.id,{meta:{...x.meta,start:false}});await modifyEntry(selected.id,{meta:{...selected.meta,start:true}});announce('恋爱起始日设好啦 💕')}catch(err){announce('设置失败：'+err.message)}return}
+  if(t.dataset.toggle){const item=allEntries.find(x=>x.id===t.dataset.toggle);if(!item)return;try{await modifyEntry(item.id,{status:markDone(item)?'open':'done'});announce(markDone(item)?'已经标记完成 ♡':'状态已更新')}catch(err){announce('操作失败：'+err.message)}return}
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&byId('account-modal').classList.contains('visible'))modalClose()});
+window.addEventListener('storage',e=>{if(e.key===demoKey&&!isCloud()){allEntries=demoLoad();renderAll()}});
+window.addEventListener('online',()=>{if(isCloud())reloadRemote()});
+/* ======= 两人小游戏：真心话大冒险 + 猫咪大富翁 ======= */
+const truthCards=[
+'第一次见到我时，你心里最真实的想法是什么？','你觉得我最迷人的一个小习惯是什么？','我们一起经历过最难忘的一天是哪天？',
+'有没有哪句想对我说的话一直藏在心里？','我让你最有安全感的瞬间是什么？','如果能重温一次约会，你会选哪一次？',
+'你心目中理想的周末约会是什么样？','我哪件小事会让你偷偷开心？','你最喜欢我们的哪张合照？',
+'你最希望我们一起解锁的新体验是什么？','我什么时候最像一只可爱小猫？','如果给我们的故事取书名，会是什么？',
+'我们有什么只有两个人才懂的暗号？','有没有想一起培养的新习惯？','你最想收到哪种不花钱的浪漫惊喜？',
+'哪首歌最像现在的我们？','你最喜欢我用什么方式表达关心？','如果现在能一起去任何地方，你会带我去哪里？',
+'你眼中我们最默契的一次是什么？','我们第一次一起笑到停不下来是因为什么？','你希望我们明年拥有一件什么共同回忆？',
+'我做过的最令你感动的小事是什么？','你对我们的未来最期待的一个小画面是什么？','说出一个你希望我们能互相理解得更好的地方。'
+];
+const dareCards=[
+'用 20 秒画一只代表对方的猫咪 🐱','唱一句你觉得适合对方的歌 🎵','模仿对方平常最可爱的一个动作 🎭',
+'用三种不同的语气说「我喜欢你」 💗','向对方展示手机里一张可爱的照片 📸','给对方起三个软乎乎的昵称 🎀',
+'用 30 秒描述一次理想约会 🌷','用动作演出你们初次见面的小片段 🎬','闭眼画一颗爱心再展示出来 💞',
+'用五个表情符号讲述今天的心情 ✨','给对方读一首自己临时编的四句小诗 📜','找出一件粉色或红色的物品并展示 🎈',
+'用猫咪的语气夸对方三句话 ฅ^•ﻌ•^ฅ','给对方设计一个专属三秒舞蹈 💃','在 30 秒内说出五个一起想吃的食物 🍰',
+'写下你想一起去的一座城市 🗺️','用三个手势表达今天的喜欢程度 💘','用十个字给对方写一句小情话 ✍️',
+'和对方一起比出一个爱心手势 🫶','画出你们未来想要的小房子 🏠','让对方决定一首歌，你模仿它的旋律 🎶',
+'说一件自己最近很感谢的小事 🌟','现场设计一张可以兑换的约会券 🎟️','展示一个你自创的招牌可爱表情 🥰'
+];
+const monoTiles=[
+{name:'甜蜜起点',emoji:'🏡',kind:'start'}, {name:'草莓奶茶',emoji:'🧋',kind:'prop',price:120,rent:36},
+{name:'粉色花房',emoji:'🌺',kind:'prop',price:160,rent:48}, {name:'惊喜卡',emoji:'🎁',kind:'event'},
+{name:'猫咪咖啡',emoji:'☕',kind:'prop',price:180,rent:54}, {name:'好运花瓣',emoji:'🌸',kind:'bonus',amount:120},
+{name:'冰淇淋屋',emoji:'🍦',kind:'prop',price:200,rent:60}, {name:'缘分转盘',emoji:'🎡',kind:'event'},
+{name:'甜品工坊',emoji:'🍰',kind:'prop',price:260,rent:78}, {name:'修理费用',emoji:'🧰',kind:'penalty',amount:90},
+{name:'星空营地',emoji:'🌌',kind:'prop',price:280,rent:84}, {name:'惊喜卡',emoji:'🎟️',kind:'event'},
+{name:'海边小屋',emoji:'🏖️',kind:'prop',price:320,rent:96}, {name:'幸运星星',emoji:'⭐',kind:'bonus',amount:100},
+{name:'樱花城堡',emoji:'🏰',kind:'prop',price:360,rent:108}, {name:'温暖港湾',emoji:'🐾',kind:'bonus',amount:60}
+];
+const monoEvents=[{text:'在公园发现宝藏：获得 100 枚喵币！',money:100},{text:'给对方买了一束花：支出 80 枚喵币。',money:-80},
+{text:'幸运抽奖中了一只毛绒猫：获得 150 枚喵币！',money:150},{text:'甜品优惠券到账：获得 70 枚喵币！',money:70},
+{text:'晚餐请客：支出 60 枚喵币。',money:-60},{text:'约会照片获得奖励：获得 120 枚喵币！',money:120}];
+const squareCoords=[];
+for(let c=1;c<=5;c++)squareCoords.push([1,c]);for(let r=2;r<=5;r++)squareCoords.push([r,5]);for(let c=4;c>=1;c--)squareCoords.push([5,c]);for(let r=4;r>=2;r--)squareCoords.push([r,1]);
+const newTruth=()=>({phase:'choose',round:1,turn:0,scores:[0,0],prompt:'',type:'',history:[]});
+const newMono=()=>({phase:'roll',turn:0,turns:0,players:[{pos:0,coins:1000},{pos:0,coins:1000}],owners:{},dice:[0,0],last:'欢迎来到猫咪大富翁，掷骰子开始约会之旅！',log:[]});
+const currentGame=kind=>sharedKind('game').filter(e=>e.meta?.game===kind).slice(-1)[0]||null;
+const playerNames=()=>{const sorted=coupleMembers.slice().sort((a,b)=>a.joined_at.localeCompare(b.joined_at));return isCloud()?[sorted[0]?.display_name||'小猫 A',sorted[1]?.display_name||'小猫 B']:['草莓小猫','奶油小猫']};
+const myGameIndex=()=>isCloud()?coupleMembers.slice().sort((a,b)=>a.joined_at.localeCompare(b.joined_at)).findIndex(m=>m.user_id===authUser.id):-1;
+const activeGameAction=turn=>!isCloud()||myGameIndex()===turn;
+let gamePending=false;
+function gameControl(label,game,action,cl=''){return `<button type="button" class="tinybtn ${cl}" data-game="${game}" data-game-action="${action}">${label}</button>`}
+function gameHistory(items){return `<div class="game-history">${items?.length?items.slice(-5).reverse().map(x=>`<div>✿ ${safe(x)}</div>`).join(''):'🐾 玩过的回合会出现在这里 ♡'}</div>`}
+function renderGames(){renderTruth();renderMonopoly()}
+function renderTruth(){
+ const e=currentGame('truth'),wrap=byId('truth-game');if(!wrap)return;
+ if(!e){wrap.innerHTML=`<div class="game-prompt"><span class="game-icon">💌</span><div class="game-question">来一场只属于我们的真心话大冒险</div><small>轮流抽题 · 回答或完成挑战 · 积累心动星星</small></div><div class="game-controls">${gameControl('💗 开始双人游戏','truth','start','hot')}</div>`;return}
+ const s=e.meta.state, names=playerNames(),turn=s.turn||0, mine=activeGameAction(turn),phase=s.phase;
+ const scores=`<div class="game-score">${names.map((n,i)=>`<div class="score-pill ${turn===i?'my-turn':''}">🐱 ${safe(n)}<b>⭐ ${Number(s.scores?.[i]||0)}</b></div>`).join('')}</div>`;
+ const intro=`<div class="game-status"><span class="game-badge">第 ${Number(s.round)||1} 回合</span><strong>轮到 ${safe(names[turn])}</strong>${isCloud()&&!mine?' · 等待 TA 操作…':' · 你的回合！'}</div>`;
+ let content='';if(phase==='choose')content=`<div class="game-prompt"><span class="game-icon">🎲</span><div class="game-question">这一次，${safe(names[turn])} 想选哪个？</div><small>真心话 +1 星星 · 大冒险 +2 星星</small></div><div class="game-controls">${gameControl('💬 真心话','truth','truth','hot')}${gameControl('🎭 大冒险','truth','dare','hot')}</div>`;
+ else content=`<div class="game-prompt"><span class="game-icon">${s.type==='truth'?'💗':'🎭'}</span><small>${s.type==='truth'?'真心话 · 诚实说出你的答案':'大冒险 · 做一个可爱挑战'}</small><div class="game-question">${safe(s.prompt)}</div></div><label class="game-hint" for="truth-answer">可选：把答案 / 完成心得写在这里（双方可看到）</label><input id="truth-answer" class="love-input game-answer" maxlength="160" placeholder="今天我想回答的是…"><div class="game-controls">${gameControl('✅ 已完成，下一位','truth','done','hot')}${gameControl('🍃 跳过本题','truth','skip')}</div>`;
+ wrap.innerHTML=scores+intro+content+gameHistory((s.history||[]).map(h=>`${names[h.who]||'小猫'} ${h.done?'完成':'跳过'}${h.type==='truth'?'真心话':'大冒险'}：${h.prompt}${h.answer?' · '+h.answer:''}`))+`<div class="game-controls">${gameControl('🔄 重开一局','truth','reset')}</div><p class="game-hint">本地模式可两个人共用一台设备轮流操作；联网后只能由当前玩家操作。本游戏可以跳过任何不舒服的题目。</p>`;
+ wrap.querySelectorAll('button').forEach(b=>{if(!mine&&b.dataset.gameAction!=='reset')b.disabled=true});
+}
+function monoAssets(s,i){return monoTiles.reduce((v,t,k)=>v+(t.kind==='prop'&&Number(s.owners?.[k])===i?t.price:0),0)}
+function gameWealth(s,i){return Number(s.players[i].coins)+monoAssets(s,i)}
+function renderMonopoly(){
+ const e=currentGame('monopoly'),wrap=byId('monopoly-game');if(!wrap)return;
+ if(!e){wrap.innerHTML=`<div class="game-prompt"><span class="game-icon">🎲</span><div class="game-question">猫咪大富翁 · 两个人的小小商业街</div><small>掷骰子 · 买地 · 收租 · 抽取惊喜 · 24 回合结算</small></div><div class="game-controls">${gameControl('🏡 开始猫咪大富翁','monopoly','start','hot')}</div>`;return}
+ const s=e.meta.state,names=playerNames(),turn=s.turn,mine=activeGameAction(turn),finished=s.phase==='finished';
+ const scores=`<div class="game-score">${s.players.map((p,i)=>`<div class="score-pill ${turn===i&&!finished?'my-turn':''}">🐈 ${safe(names[i])}<b>🪙 ${Math.max(0,p.coins)}</b><small>资产：${gameWealth(s,i)} · 地块 ${Object.values(s.owners).filter(v=>Number(v)===i).length}</small></div>`).join('')}</div>`;
+ const cells=monoTiles.map((tile,i)=>{const [r,c]=squareCoords[i],owner=s.owners?.[i],occupants=s.players.map((p,j)=>p.pos===i?['🐱','🐈'][j]:'').join('');return `<div class="mono-cell ${tile.kind==='prop'?'prop':tile.kind==='event'?'event':tile.kind==='start'?'start':tile.kind==='penalty'?'penalty':'bonus'}" style="--row:${r};--col:${c}" title="${safe(tile.name)}${tile.price?' · 买入 '+tile.price+' · 租金 '+tile.rent:''}"><span class="cell-icon">${tile.emoji}</span><span class="cell-name">${safe(tile.name)}</span><span class="cell-price">${tile.price?'🪙'+tile.price:''}</span>${owner!==undefined?`<span class="owned ${owner===1?'partner':''}">${owner===0?'粉':'紫'}</span>`:''}<span class="tokens">${occupants}</span></div>`}).join('');
+ const center=`<div class="mono-center"><span class="mono-center-cat">🐱 💕 🐈</span><strong>喵喵大富翁</strong><span class="dice">${s.dice?.[0]?`🎲 ${s.dice[0]} + ${s.dice[1]}`:'🎲 🎲'}</span><small>第 ${Math.min(s.turns+1,24)} / 24 回合</small></div>`;
+ let controls='';if(finished){const a=gameWealth(s,0),b=gameWealth(s,1);controls=`<div class="game-prompt"><span class="game-icon">🏆</span><div class="game-question">${a===b?'两只小猫打成平手！':`${safe(names[a>b?0:1])} 赢得本次大富翁！`}</div><small>最终资产：${a} : ${b} 喵币</small></div>`}
+ else if(s.phase==='buy'){const tile=monoTiles[s.players[turn].pos];controls=`<div class="game-status"><strong>轮到 ${safe(names[turn])} 决定</strong> · ${safe(tile.name)}售价 🪙${tile.price}</div><div class="game-controls">${gameControl('💗 买下这块地','monopoly','buy','hot')}${gameControl('🍃 暂时不买','monopoly','pass')}</div>`}
+ else controls=`<div class="game-status"><span class="game-badge">第 ${s.turns+1} / 24 回合</span><strong>轮到 ${safe(names[turn])}</strong>${!mine?' · 等待 TA 掷骰子':' · 准备出发！'}</div><div class="game-controls">${gameControl('🎲 掷两颗骰子','monopoly','roll','hot')}</div>`;
+ wrap.innerHTML=scores+`<div class="mono-shell"><div class="mono-board">${cells}${center}</div></div><div class="game-history"><b>📰 ${safe(s.last||'准备出发')}</b>${(s.log||[]).slice(-4).reverse().map(x=>`<div>♡ ${safe(x)}</div>`).join('')}</div>`+controls+`<div class="game-controls">${gameControl('🔄 重开新的一局','monopoly','reset')}</div><p class="game-hint">经过起点 +150 喵币；踩到对方地块要付租金；24 回合后按「现金 + 地块买入价」结算。联网模式双方轮流操作，数据自动同步。</p>`;
+ wrap.querySelectorAll('button').forEach(b=>{if(!mine&&b.dataset.gameAction!=='reset')b.disabled=true});
+}
+async function storeGame(kind,next,current){
+ if(gamePending)return;gamePending=true;const host=byId(kind==='truth'?'truth-game':'monopoly-game');host?.classList.add('game-busy');
+ try{
+  if(!current){
+   if(currentGame(kind))throw Error('游戏已由另一台设备建立，请刷新');
+   await addEntry('game',{title:kind==='truth'?'真心话大冒险':'猫咪大富翁',meta:{game:kind,version:0,state:next}});
+  }else if(isCloud()){
+   const {data,error}=await cloudClient.rpc('update_love_game',{p_game_id:current.id,p_expected_version:current.meta.version||0,p_next_state:next});
+   if(error)throw error;
+   const entry=allEntries.find(x=>x.id===current.id);if(entry)entry.meta=data;
+   renderAll();
+  }else await modifyEntry(current.id,{meta:{game:kind,version:(current.meta.version||0)+1,state:next}});
+ }catch(error){announce('游戏操作失败：'+(error.message||error));if(isCloud())await reloadRemote()}
+ finally{gamePending=false;host?.classList.remove('game-busy')}
+}
+function chooseCard(cards,history){const used=new Set((history||[]).slice(-6).map(x=>x.prompt));const unused=cards.filter(x=>!used.has(x));const opts=unused.length?unused:cards;return opts[Math.floor(Math.random()*opts.length)]}
+function nextMonoTurn(s,msg){s.log=[...(s.log||[]),msg].slice(-7);s.last=msg;s.turns++;if(s.turns>=24||s.players.some(p=>p.coins<=0)){s.phase='finished'}else{s.turn=1-s.turn;s.phase='roll'}}
+async function handleGameAction(btn){
+ if(gamePending)return;const kind=btn.dataset.game,action=btn.dataset.gameAction;if(!['truth','monopoly'].includes(kind))return;
+ const current=currentGame(kind);
+ if(action==='start'){await storeGame(kind,kind==='truth'?newTruth():newMono(),current);return}
+ if(!current){announce('先开始一局游戏吧');return}
+ const s=JSON.parse(JSON.stringify(current.meta.state));
+ if(action==='reset'){if(!confirm('确定重开这一局吗？当前游戏的进度和得分会清零（另一半也会同步看到）。'))return;await storeGame(kind,kind==='truth'?newTruth():newMono(),current);return}
+ if(!activeGameAction(s.turn)){announce('还没轮到你哦，等 TA 操作一下 ♡');return}
+ const names=playerNames();
+ if(kind==='truth'){
+  if(s.phase==='choose'&&['truth','dare'].includes(action)){s.type=action;s.prompt=chooseCard(action==='truth'?truthCards:dareCards,s.history);s.phase='answer'}
+  else if(s.phase==='answer'&&['done','skip'].includes(action)){const ans=(byId('truth-answer')?.value||'').trim().slice(0,160);const done=action==='done';if(done)s.scores[s.turn]+=s.type==='truth'?1:2;s.history=[...(s.history||[]),{who:s.turn,type:s.type,prompt:s.prompt,done,answer:done?ans:''}].slice(-5);s.turn=1-s.turn;s.round++;s.type='';s.prompt='';s.phase='choose'}
+  else return;
+ }else{
+  if(s.phase==='roll'&&action==='roll'){
+   const a=1+Math.floor(Math.random()*6),b=1+Math.floor(Math.random()*6),n=a+b,person=s.players[s.turn],old=person.pos;person.pos=(old+n)%monoTiles.length;s.dice=[a,b];
+   const laps=Math.floor((old+n)/monoTiles.length);if(laps)person.coins+=150*laps;
+   const tile=monoTiles[person.pos];let message=`${names[s.turn]} 掷出 ${a}+${b}，来到「${tile.name}」${laps?'，经过起点 +150':''}`;
+   if(tile.kind==='prop'){
+    const owner=s.owners[person.pos];if(owner===undefined&&person.coins>=tile.price){s.phase='buy';s.last=message+'，可以买地或放弃';s.log=[...(s.log||[]),s.last].slice(-7)}
+    else if(owner!==undefined&&owner!==s.turn){person.coins=Math.max(0,person.coins-tile.rent);s.players[owner].coins+=tile.rent;nextMonoTurn(s,message+`，向 ${names[owner]} 支付 ${tile.rent} 租金`)}
+    else nextMonoTurn(s,message+(owner===s.turn?'，这是自己的地盘 ♡':'，暂时买不起'));
+   }else if(tile.kind==='event'){
+    const card=monoEvents[Math.floor(Math.random()*monoEvents.length)];person.coins=Math.max(0,person.coins+card.money);nextMonoTurn(s,message+'。'+card.text);
+   }else if(tile.kind==='bonus'){person.coins+=tile.amount;nextMonoTurn(s,message+`，奖励 +${tile.amount} 喵币！`)}
+   else if(tile.kind==='penalty'){person.coins=Math.max(0,person.coins-tile.amount);nextMonoTurn(s,message+`，扣除 ${tile.amount} 喵币`)}
+   else nextMonoTurn(s,message+'，休息一回合也很甜');
+  }else if(s.phase==='buy'&&['buy','pass'].includes(action)){
+   const tileIndex=s.players[s.turn].pos,tile=monoTiles[tileIndex];if(!tile||tile.kind!=='prop')return;
+   if(action==='buy'){if(s.owners[tileIndex]!==undefined||s.players[s.turn].coins<tile.price){announce('无法购买这块地');return}s.players[s.turn].coins-=tile.price;s.owners[tileIndex]=s.turn;nextMonoTurn(s,`${names[s.turn]} 买下「${tile.name}」，花费 ${tile.price} 喵币`)}
+   else nextMonoTurn(s,`${names[s.turn]} 暂时没有购买「${tile.name}」`);
+  }else return;
+ }
+ await storeGame(kind,s,current);
+ const rect=btn.getBoundingClientRect();if(!gamePending&&action!=='skip')fireHearts(rect.left+rect.width/2,rect.top);
+}
+document.addEventListener('click',e=>{const btn=e.target.closest('button[data-game-action]');if(btn)handleGameAction(btn)});
+
+initCloud();
+
+})();
+</script>
+</body>
+</html>
+
